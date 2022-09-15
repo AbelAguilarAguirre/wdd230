@@ -6,7 +6,7 @@
 
 header {
     display: flex;
-    background-color: #EAC435;
+    background-color: #6577F0;
     padding: 10px;
     padding-left: 20px;
     border-radius: 5px;
@@ -14,7 +14,7 @@ header {
 }
 
 h1 {
-    color: #345995;
+    color: #F0CF65;
     text-shadow: .5px .5px #000000;
     text-align: center;
     margin-left: 40px;
@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-    color: #345995;
+    color: #F0CF65;
     text-shadow: .5px .5px #000000;
     text-align: left;
     margin-left: 10px;
@@ -40,26 +40,27 @@ h2 {
 }
 
 footer {
-    background-color: #EAC435;
+    background-color: #6577F0;
     padding-top: 20px;
     padding-bottom: 1px;
     border-radius: 5px;
     box-shadow: 0px 1px 10px #000000;
-    color: #345995;
+    color: #FFE385;
     text-align: center;
 }
 
 footer a {
     text-decoration: none;
+    color: #FFE385;
 }
 
 footer a:hover {
     text-decoration: underline;
-    color: #FB4D3D;
+    color: #2536A3;
 }
 
 footer p {
-    color: #CA1551;
+    color: #DEA600;
     font-size: .9em;
     margin-top: -.1px;
 }
