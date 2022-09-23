@@ -27,7 +27,7 @@
     }
     .box2 {
         grid-column: span 2;
-        max-width: 1000px;
+        max-width: 1200px;
     }
     section {
         margin: 2rem 1rem;
