@@ -1,4 +1,4 @@
-@media only screen and (min-width: 500px)  {
+@media only screen and (min-width: 800px)  {
     h1 {
         font-size: 2.5rem;
     }
@@ -7,6 +7,7 @@
     }
     h2 {
         font-size: 2rem;
+        grid-column: span 2;
     }
     h3 {
         font-size: 1.5rem
@@ -14,5 +15,21 @@
     footer, header {
         border-radius: 5px;
     }
-
+    main {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    hr {
+        grid-column: span 2;
+    }
+    .box {
+        max-width: 650px;
+    }
+    .box2 {
+        grid-column: span 2;
+        max-width: 1000px;
+    }
+    section {
+        margin: 2rem 1rem;
+    }
 }
