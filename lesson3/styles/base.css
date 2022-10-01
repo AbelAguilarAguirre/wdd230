@@ -1,8 +1,8 @@
 :root {
     --header-background: #617542;
     --header-font-color: #e0dfe4;
-    --header-font: font-family: 'Alkalami', serif;
-    --para-font: font-family: 'Noto Sans JP', sans-serif;
+    --header-font: 'Alkalami', serif;
+    --para-font:'Noto Sans JP', sans-serif;
     --nav-primary-background: #374953;
     --nav-primary-font: #d9d7dc;
     --nav-secondary-background: #839170;
@@ -26,6 +26,7 @@ header {
     font-style: var(--header-font);
     display: flex;
     align-items: center;
+    padding: 0px 5%;
 }
 #sampheader, .primary {
     background: var(--header-background);
@@ -116,15 +117,22 @@ img{
     text-align: center;
     
 }
-footer, footer a, #updated {
+footer, #updated {
     background: var(--header-background);
     color: var(--header-font-color);
     font-style: var(--header-font);
     text-align: center;
-    padding: 5px 10px;
+    padding: 10px 10px;
     font-size: 1.2rem;
     text-decoration: none;
     margin: auto;
+}
+footer a {
+    text-decoration: none;
+    margin: auto;
+    background: var(--header-background);
+    color: var(--header-font-color);
+    font-style: var(--header-font);
 }
 footer a:hover{
     color: var(--nav-secondary-font);
