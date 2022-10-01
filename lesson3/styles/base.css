@@ -1,0 +1,136 @@
+:root {
+    --header-background: #617542;
+    --header-font-color: #e0dfe4;
+    --header-font: font-family: 'Alkalami', serif;
+    --para-font: font-family: 'Noto Sans JP', sans-serif;
+    --nav-primary-background: #374953;
+    --nav-primary-font: #d9d7dc;
+    --nav-secondary-background: #839170;
+    --nav-secondary-font: #374953;
+    --current-page-background: #d9d7dc;
+    --current-page-font: #374953;
+    --h1-background: #839170;
+    --h2-background: #617542;
+    --h3-background: #374953;
+    --h-font: #e0dfe4;
+    --p-font: #374953;
+}
+body {
+    margin: 0 auto;
+    font-family: var(--para-font);
+    font-size: 16px;
+}
+header {
+    background: var(--header-background);
+    color: var(--header-font-color);
+    font-style: var(--header-font);
+    display: flex;
+    align-items: center;
+}
+#sampheader, .primary {
+    background: var(--header-background);
+    color: var(--header-font-color);
+    font-style: var(--header-font);
+
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: var(--para-font);
+    font-size: 1.5rem;
+    max-width: 300px;
+    margin: 0 auto;
+}
+nav a, #sampprimnav, .secondary {
+    background: var(--nav-primary-background);
+    color: var(--nav-primary-font);
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: auto;
+    border-radius: 5px;
+    
+}
+nav a:hover, #sampsecnav, .accent1{
+    background: var(--nav-secondary-background);
+    color: var(--nav-secondary-font);
+}
+.accent2 {
+    background: var(--current-page-background);
+}
+#currentpage, #sampcurrent {
+    background: var(--current-page-background);
+    color: var(--current-page-font);
+    font-size: 2rem;
+}
+main, table, header{
+    margin: 0 auto;
+}
+img {
+    max-width: 200px;
+    height:auto;
+}
+h1, #samph1, th {
+    background: var(--h1-background);
+    color: var(--h-font);
+    padding: 5px 10px;
+}
+h2, #samph2 {
+    color: var(--h-font);
+    background: var(--h2-background);
+    padding: 5px 10px;
+    margin: 0px 5%;
+    border-radius: 5px;
+}
+h3, #samph3 {
+    background: var(--h3-background);
+    color: var(--h-font);
+    padding: 5px 10px;
+    margin: 0px 7%;
+    border-radius: 5px;
+}
+p {
+    color: var(--p-font);
+    font-family: var(--para-font);
+    padding: 5px 10px;
+    margin: 0px 7%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 10px 10px;
+}
+#personacard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    margin: 10px 5%;
+}
+img{
+    border-radius: 5px;
+}
+
+#question {
+    border: 1px solid black;
+    margin: .5px;
+    text-align: center;
+    
+}
+footer, footer a, #updated {
+    background: var(--header-background);
+    color: var(--header-font-color);
+    font-style: var(--header-font);
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: auto;
+}
+footer a:hover{
+    color: var(--nav-secondary-font);
+
+}
+footer, main {
+    margin-top: 2rem;
+}
+
