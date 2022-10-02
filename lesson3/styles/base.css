@@ -34,6 +34,9 @@ header {
     font-style: var(--header-font);
 
 }
+#title {
+    background: none;
+}
 nav {
     display: flex;
     flex-direction: row;
@@ -43,6 +46,7 @@ nav {
     font-size: 1.5rem;
     max-width: 300px;
     margin: 0 auto;
+    align-items: center;
 }
 nav a, #sampprimnav, .secondary {
     background: var(--nav-primary-background);
@@ -50,7 +54,13 @@ nav a, #sampprimnav, .secondary {
     text-decoration: none;
     padding: 15px 30px;
     margin: auto;
-    border-radius: 5px;
+    border-radius: 20px;
+    
+}
+nav a {
+    min-width: 250px;
+    text-align: center;
+    margin: 1px;
     
 }
 nav a:hover, #sampsecnav, .accent1{
