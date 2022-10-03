@@ -86,6 +86,7 @@ h1, #samph1, th {
     background: var(--h1-background);
     color: var(--h-font);
     padding: 5px 10px;
+    font-size: 1.5rem;
 }
 h2, #samph2 {
     color: var(--h-font);
@@ -110,6 +111,7 @@ p {
 th, td {
     border: 1px solid black;
     padding: 10px 10px;
+    font-size: 1rem;
 }
 #personacard {
     display: grid;
@@ -140,7 +142,6 @@ footer, #updated {
 footer a {
     text-decoration: none;
     margin: auto;
-    background: var(--header-background);
     color: var(--header-font-color);
     font-style: var(--header-font);
 }
