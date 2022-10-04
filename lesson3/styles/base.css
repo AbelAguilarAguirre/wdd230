@@ -78,14 +78,16 @@ nav a {
     flex-grow: 1;
     min-width: 200px;
     max-width: 500px;
+    transition: transform .2s;
 }
+
 
 nav a:hover,
 #sampsecnav,
 .accent1 {
     background: var(--nav-secondary-background);
     color: var(--nav-secondary-font);
-    scale: 1.1;
+    transform: scale(1.1);
 }
 
 .accent2 {
@@ -98,6 +100,7 @@ nav a:hover,
     color: var(--current-page-font);
     font-size: 2rem;
     scale: 1;
+    transform: none;
 }
 
 main,
@@ -119,7 +122,9 @@ th {
     color: var(--h-font);
     padding: 5px 10px;
 }
-
+#samph1 {
+    background-color: var(--h1-background);
+}
 h2,
 #samph2 {
     color: var(--h-font);
