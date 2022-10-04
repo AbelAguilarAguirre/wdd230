@@ -85,6 +85,7 @@ nav a:hover,
 .accent1 {
     background: var(--nav-secondary-background);
     color: var(--nav-secondary-font);
+    scale: 1.1;
 }
 
 .accent2 {
@@ -96,6 +97,7 @@ nav a:hover,
     background: var(--current-page-background);
     color: var(--current-page-font);
     font-size: 2rem;
+    scale: 1;
 }
 
 main,
