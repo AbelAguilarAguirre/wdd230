@@ -57,3 +57,24 @@ ol {
     margin: 0 auto;
     max-width: 600px;
     }
+.contrast {
+    display: flex;
+}
+.badcontrast, .goodcontrast {
+    padding: 200px;
+    background-color: yellow;
+}
+.badcontrast {
+    color: white;
+}
+
+.nontexttitle {
+    margin-bottom: 200px;
+}
+button {
+    margin: 60px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
