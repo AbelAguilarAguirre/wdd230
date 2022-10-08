@@ -84,7 +84,8 @@ nav {
 .navigation li:first-child {
     display: block;
     width: 63px;
-    margin-left: 20px;
+    min-width: 100%;
+    
 }
 
 .navigation li {
