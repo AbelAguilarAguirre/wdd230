@@ -1,0 +1,32 @@
+@media only screen and (min-width: 1024px) {
+    .navigation {
+		display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10px;
+	}
+    
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+        
+	}
+	
+	.navigation li:first-child {
+		display: none;
+	}
+    .sl3 {
+        display: block;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "event banner banner spotlight"
+        "weather banner banner spotlight"
+        "join news news spotlight";
+    }
+    .spotlights {
+        flex-direction: column;
+    }
+}
