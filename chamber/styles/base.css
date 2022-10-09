@@ -39,13 +39,13 @@ body {
 }
 
 .kauai {
-    font-size: 5rem;
+    font-size: 3rem;
     margin: 0;
     margin-top: 50px;
     align-self: center;
     grid-column: 2;
     grid-row: 1/2;
-
+    text-align: center;
 }
 
 .title {
@@ -54,6 +54,7 @@ body {
     grid-column: 2;
     grid-row: 2/3;
     text-align: center;
+    font-size: 2rem;
 }
 
 #date {
@@ -171,6 +172,7 @@ ul {
 .icons {
     border-radius: 10px;
     margin: 0 20px;
+    width: 3rem;
 }
 
 main {
@@ -198,14 +200,15 @@ footer {
     font-size: 1.2rem;
     text-decoration: none;
     margin: 0 auto;
-    bottom: 0;
-    position: fixed;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 10px;
+}
+.divider {
+    display: none;
 }
 
 footer a {
