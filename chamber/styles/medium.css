@@ -53,13 +53,18 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "banner banner banner"
+    "special special special"  
+    "banner banner banner"
       "news news news"
       "spotlight spotlight spotlight"
       "join join join"
       "event event weather";
     gap: 10px;
     margin: 10px;
+  }
+
+  #specialbanner {
+    grid-area: special;
   }
 
   .herobanner {
@@ -80,7 +85,9 @@
   }
 
   .join {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     grid-area: join;
   }
 

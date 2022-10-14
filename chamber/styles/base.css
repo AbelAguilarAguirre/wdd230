@@ -77,7 +77,15 @@ body {
 .email:hover {
     color: rgb(94, 255, 0);
 }
-
+#specialbanner {
+    display: none;
+    margin: 5px;
+    text-align: center;
+    background-color: #374953;
+    color: #FAFAFA;
+    padding: 5px;
+    border-radius: 10px;
+}
 hr {
     border-top: 2px solid black;
 }
@@ -280,7 +288,7 @@ ul {
     padding: 20px;
 }
 
-.event {
+.event, .news {
     display: flex;
     flex-direction: column;
     justify-content: center;

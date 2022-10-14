@@ -41,6 +41,7 @@
   main {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
+      "special special special special"  
       "event banner banner spotlight"
       "weather banner banner spotlight"
       "join news news spotlight";
@@ -50,4 +51,5 @@
   .spotlights {
     flex-direction: column;
   }
+  
 }
