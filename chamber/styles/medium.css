@@ -1,106 +1,111 @@
 @media only screen and (min-width: 737px) {
-    ul {
-        flex-direction: row;
-    }
+  ul {
+    flex-direction: row;
+  }
 
-    .responsive li {
-        min-width: 200px;
-    }
+  body {
+    margin-bottom: 135px;
+  }
 
-    .logobox {
-        display: grid;
-        flex-direction: column;
-        align-items: center;
-        margin: 0px 30px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
+  .responsive li {
+    min-width: 200px;
+  }
 
-    #date {
-        grid-column: 5/7;
-    }
+  .logobox {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
 
-    .logo {
-        max-width: 15rem;
-    }
+  #date {
+    grid-column: 5/7;
+  }
 
-    .title {
-        align-self: center;
-        font-size: 2.5rem;
-    }
+  .logo {
+    max-width: 15rem;
+  }
 
-    #date {
-        align-self: center;
-    }
+  .title {
+    align-self: center;
+    font-size: 2.5rem;
+  }
 
-    .fb {
-        width: 64px;
-        height: 64px;
-    }
+  #date {
+    align-self: center;
+  }
 
-    .twitter {
-        width: 64px;
-        height: 64px;
-    }
+  .fb {
+    width: 64px;
+    height: 64px;
+  }
 
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "banner banner banner"
-            "news news news"
-            "spotlight spotlight spotlight"
-            "join join join"
-            "event event weather";
-        gap: 10px;
-    }
+  .twitter {
+    width: 64px;
+    height: 64px;
+  }
 
-    .herobanner {
-        grid-area: banner;
-    }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "banner banner banner"
+      "news news news"
+      "spotlight spotlight spotlight"
+      "join join join"
+      "event event weather";
+    gap: 10px;
+    margin: 10px;
+  }
 
-    .event {
-        grid-area: event;
-    }
+  .herobanner {
+    grid-area: banner;
+  }
 
-    .weather {
-        grid-area: weather;
-    }
+  .event {
+    grid-area: event;
+  }
 
-    .news {
-        grid-area: news;
-    }
+  .weather {
+    grid-area: weather;
+  }
 
-    .join {
-        display: block;
-        grid-area: join;
-    }
+  .news {
+    grid-area: news;
+  }
 
-    .spotlights {
-        grid-area: spotlight;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
+  .join {
+    display: block;
+    grid-area: join;
+  }
 
-    .kauai {
-        font-size: 5rem;
-    }
+  .spotlights {
+    grid-area: spotlight;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
 
-    #date {
-        font-size: 2rem;
-    }
+  .kauai {
+    font-size: 5rem;
+  }
 
-    .icons {
-        width: 4rem;
-    }
+  #date {
+    font-size: 2rem;
+  }
 
-    .divider {
-        display: inline;
-    }
+  .icons {
+    width: 4rem;
+  }
 
-    footer {
-        bottom: 0;
-        position: fixed;
-    }
+  .divider {
+    display: inline;
+  }
+
+  footer {
+    bottom: 0;
+    position: fixed;
+  }
 }

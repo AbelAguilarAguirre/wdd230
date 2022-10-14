@@ -19,6 +19,10 @@
         display: block;
     }
 
+    body {
+        margin-bottom: 103px;
+    }
+
     main {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
