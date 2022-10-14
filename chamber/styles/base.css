@@ -39,26 +39,52 @@ body {
 
 .kauai {
     font-size: 3rem;
-    margin: 0;
-    margin-top: 50px;
     align-self: center;
     grid-column: 2;
-    grid-row: 1/2;
+    grid-row: 1/3;
     text-align: center;
+    
 }
+.slimg {
+    max-width: 200px;
+}
+.spotlights {
+    grid-area: spotlight;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+  }
 
 .title {
-    margin-bottom: 50px;
-    margin: 0;
     grid-column: 2;
-    grid-row: 2/3;
+    grid-row: 1/3;
     text-align: center;
     font-size: 2rem;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.email {
+    text-decoration: none;
+    color: var(--h-font);
+    transition: 0.5s;
+}
+
+.email:hover {
+    color: rgb(94, 255, 0);
+}
+
+hr {
+    border-top: 2px solid black;
 }
 
 #date {
     grid-column: 3;
-    grid-row: 2/3;
+    grid-row: 1/3;
 }
 
 header {
@@ -68,6 +94,21 @@ header {
     font-size: 1.1rem;
     margin: 0 auto;
     padding-bottom: 10px;
+}
+h1,h2,h3,h4 {
+    font-family: var(--header-font);
+    margin: 0;
+}
+p {
+    font-family: var(--para-font);
+    font-weight: 800;
+}
+
+main section {
+    text-align: center;
+    background-color: var(--h2-background);
+    box-shadow: 1px 1px 10px black;
+    margin: 10px 0px;
 }
 
 nav {
@@ -164,13 +205,13 @@ ul {
 
 .twitter {
     display: flex;
-    grid-column: 4;
+    grid-column: 3;
     justify-content: space-between;
 }
 
 .icons {
     border-radius: 10px;
-    margin: 0 20px;
+    margin: 0 10px;
     width: 3rem;
 }
 
@@ -183,8 +224,6 @@ ul {
 .heroimg {
     width: 100%;
     height: auto;
-    border: 1px #374953 dashed;
-    height: auto;
     grid-column: 1/10;
     grid-row: 1/6;
 }
@@ -196,21 +235,94 @@ ul {
     background-color: #617542ad;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    justify-self: baseline;
+    align-self: center;
 }
 
 .herojoin-button-box {
-    grid-column: 5/7;
+    grid-column: 5/9;
     grid-row: 4/5;
     background: #839170;
     border-radius: 10px;
+    margin: 0.83em 0px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 1px 1px 10px black;
+    transition: 0.5s;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #617542 0%, #6c8d3b  51%, #617542  100%);
+    background-size: 200% auto;
 }
 
-.spotlights div {
-    border: 1px #374953 solid;
+.herojoin {
+    margin: 0px;
+    padding: 15px;   
+}
+
+.herojoin-button-box:hover {
+    background-position: right center;
+    color: black;
+    text-decoration: none;
+  }
+
+.herojoin-button-box:active {
+    transform: scale(0.95);
+}
+
+.moreinfo {
+    text-decoration: none;
+    color: var(--h-font);
+}
+
+.event, .news, .join {
+    padding: 20px;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.weather {
+    max-width: 344px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.weatherwidget-io {
+    border-radius: 10px;
+}
+
+.sl1, .sl3 {
+    margin: 5px;
+    border: 3px #374953 solid;
     padding: 10px;
 }
 .join, .sl3 {
     display: none;
+}
+
+.jointxt {
+    background-image: linear-gradient(45deg, #c5c5c5 0%, #FAFAFA  51%, #c5c5c5  100%);
+    margin: 10px 70px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+    text-decoration: none;
+    color: #374953;
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+.jointxt:hover {
+    background-position: right center;
+    color: black;
+    text-decoration: none;
+}
+.join-button-box {
+    text-decoration: none;
 }
 
 footer {
@@ -253,3 +365,10 @@ footer a:hover {
     max-width: 50px;
     height: auto;
 }
+
+
+
+
+
+
+

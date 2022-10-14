@@ -24,12 +24,14 @@
   }
 
   .logo {
-    max-width: 15rem;
+    max-width: 11rem;
+    justify-self: end;
   }
 
   .title {
     align-self: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 50px;
   }
 
   #date {
@@ -70,6 +72,7 @@
 
   .weather {
     grid-area: weather;
+    margin: 0;
   }
 
   .news {
@@ -82,14 +85,14 @@
   }
 
   .spotlights {
-    grid-area: spotlight;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    flex-direction: row;
   }
-
+  main section, .heroimg {
+    border-radius: 5px;
+  }
   .kauai {
-    font-size: 5rem;
+    font-size: 4rem;
+    margin-top: 83px;
   }
 
   #date {
