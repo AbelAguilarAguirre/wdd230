@@ -2,11 +2,6 @@
   ul {
     flex-direction: row;
   }
-
-  body {
-    margin-bottom: 135px;
-  }
-
   .responsive li {
     min-width: 200px;
   }
@@ -17,6 +12,8 @@
     align-items: center;
     margin: 0px 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-height: 250px;
+    width: auto;
   }
 
   #date {
@@ -112,10 +109,5 @@
 
   .divider {
     display: inline;
-  }
-
-  footer {
-    bottom: 0;
-    position: fixed;
   }
 }
