@@ -11,23 +11,23 @@ function empty(input) {
 }
 button.addEventListener('click', function () {
     if (empty(input)) {
-    const chap = input.value;
-    
-
-    const listItem = document.createElement("li");
-    const listText = document.createElement("span");
-    const listBtn = document.createElement("button");
-
-    listItem.appendChild(listText);
-    listText.textContent = chap;
-    listItem.appendChild(listBtn);
-    listBtn.textContent = '❌';
-    list.appendChild(listItem);
-
-    listBtn.addEventListener('click', () => {
-        list.removeChild(listItem);
-        input.focus()
-    });
-    input.value = '';
-    input.focus();}
+        const chap = input.value;
+        
+        
+        const listItem = document.createElement("li");
+        const listText = document.createElement("span");
+        const listBtn = document.createElement("button");
+        
+        listItem.appendChild(listText);
+        listText.textContent = chap;
+        listItem.appendChild(listBtn);
+        listBtn.textContent = '❌';
+        list.appendChild(listItem);
+        
+        listBtn.addEventListener('click', () => {
+            list.removeChild(listItem);
+            input.focus()
+        });
+        input.value = '';
+        input.focus();}
 });
