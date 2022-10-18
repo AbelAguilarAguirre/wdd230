@@ -10,7 +10,7 @@ function empty(input) {
     return true;
 }
 button.addEventListener('click', function () {
-    empty(input)
+    if (empty(input)) {
     const chap = input.value;
     
 
@@ -29,5 +29,5 @@ button.addEventListener('click', function () {
         input.focus()
     });
     input.value = '';
-    input.focus();
+    input.focus();}
 });
