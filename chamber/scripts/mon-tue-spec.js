@@ -7,3 +7,7 @@ if (currentDay >= 1 && currentDay <= 2) {
     document.getElementById("specialbanner").style.display = "block";
 } else document.getElementById("specialbanner").style.display = "none";
 
+//Current year
+const currentYear = date.getFullYear(); 
+document.getElementById("currentyear").innerHTML = currentYear;
+
