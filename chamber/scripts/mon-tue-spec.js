@@ -11,3 +11,6 @@ if (currentDay >= 1 && currentDay <= 2) {
 const currentYear = date.getFullYear(); 
 document.getElementById("currentyear").innerHTML = currentYear;
 
+//Todays date
+document.getElementById('date').innerHTML = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(date);
+
