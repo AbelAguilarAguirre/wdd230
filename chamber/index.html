@@ -21,7 +21,7 @@
 <body>
   <header>
     <div class="logobox">
-      <a class="logo" href="index.html"><img class="logo" src="images/logo.png" alt="KCOC logo"></a>
+      <a class="logo" href="index.html"><img class="logo" src="images/logo.webp" alt="KCOC logo"></a>
       <div>
         <h1 class="kauai">Kauai</h1>
         <h1 class="title">Chamber of Commerce</h1>
@@ -56,7 +56,7 @@
   <main>
     <div id="specialbanner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
     <section class="herobanner">
-      <img class="heroimg" src="images/hero-img.jpg" alt="Scenic image of Napali coast off the west side of Kauai.">
+      <img class="heroimg" src="images/wdd230-org.jpg" alt="Scenic image of Napali coast off the west side of Kauai." sizes="100vw" srcset="images/wdd230-org200.webp 800w, images/wdd230-org500.webp 1200w, images/wdd230-org800.webp 1500w">
       <h2 class="heromsg">Welcome to Kauai</h2>
       <a class="herojoin-button-box" href="join.html">
         <h3 class="herojoin">Join the Chamber</h3>
@@ -74,10 +74,14 @@
       </div>
     </section>
 
-    <div class="weather">
-      <a class="weatherwidget-io" href="https://forecast7.com/en/21d98n159d37/lihue/" data-label_1="LIHUE"
-        data-label_2="WEATHER" data-theme="weather_one">LIHUE WEATHER</a>
-    </div>
+    <section class="weather">
+      <h2>Weather</h2>
+      <div class="temp"><p class="weathersymbol">🌦</p><h3><span id="temperature">50</span>°F</h3></div>
+      <h3>Sunny</h3>
+      <hr>
+      <div class="temp"><p>Wind Speed: <span id="windSpeed">5</span>mph</p></div>
+      <div class="temp"><p>Wind Chill: <span id="windChill">N/A</span></p></div>
+    </section>
 
     <section class="news">
       <div>
@@ -139,7 +143,7 @@
   </main>
   <footer>
     <div>
-      <img class="footerlogo" src="images/logo.png" alt="KCOC logo">
+      <img class="footerlogo" src="images/logo.webp" alt="KCOC logo">
     </div>
     <div class="divider">|</div>
     <div>Kauai Chamber of Commerce</div>
@@ -165,11 +169,9 @@
     <div>WDD 230 Project</div>
     <div>Last Updated: <span id="lastupdate"></span></div>
   </footer>
-  <script src="scripts/current-year.js"></script>
   <script src="scripts/last-updated.js"></script>
-  <script src="scripts/todays-date.js"></script>
   <script src="scripts/hamburger-button.js"></script>
-  <script src="scripts/weather.js"></script>
+  <script src="scripts/windchill.js"></script>
   <script src="scripts/mon-tue-spec.js"></script>
 </body>
 
