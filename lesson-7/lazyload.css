@@ -1,0 +1,17 @@
+img[data-src] {
+    min-width: 50px;
+    min-height: 50px;
+    filter: blur(0.2em);
+}
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    margin-top: 100px;
+    filter: blur(0em);
+    transition: filter 3s;
+    height: 300px;
+}
