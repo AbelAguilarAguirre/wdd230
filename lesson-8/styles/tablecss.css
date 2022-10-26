@@ -1,0 +1,46 @@
+caption {
+  padding: 10px;
+  caption-side: bottom;
+  color: black;
+  font-size: 0.85rem;
+  
+}
+
+table {
+  margin: 10px auto;
+  box-shadow: 0 0 20px;
+  border: thin solid yellow;
+  border-collapse: collapse;
+}
+
+tr:first-child th,
+.highlighted {
+  background-color: yellow;
+  color: black;
+  
+}
+
+th,
+td {
+  padding: 7px 15px;
+  border: 1px solid black;
+  
+}
+
+th {
+  background-color: black;
+  color: yellow;
+  
+}
+
+td {
+  text-align: center;
+  
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 0, 0.377);
+  
+}
+
+
