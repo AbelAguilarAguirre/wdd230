@@ -2,6 +2,7 @@
   ul {
     flex-direction: row;
   }
+
   .responsive li {
     min-width: 200px;
   }
@@ -50,8 +51,8 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "special special special"  
-    "banner banner banner"
+      "special special special"
+      "banner banner banner"
       "news news news"
       "spotlight spotlight spotlight"
       "join join join"
@@ -90,9 +91,12 @@
   .spotlights {
     flex-direction: row;
   }
-  main section, .heroimg {
+
+  main section,
+  .heroimg {
     border-radius: 5px;
   }
+
   .kauai {
     font-size: 4rem;
     margin-top: 83px;
@@ -108,5 +112,19 @@
 
   .divider {
     display: inline;
+  }
+
+  .left,
+  .right {
+    width: 50%;
+    margin: 10px;
+    transition: all .8s;
+    box-shadow: 0px 0px 10px 1px;
+  }
+
+  .left:hover,
+  .right:hover {
+    scale: 1.01;
+    box-shadow: 0px 0px 100px 1px;
   }
 }

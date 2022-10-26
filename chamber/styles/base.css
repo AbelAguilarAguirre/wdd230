@@ -110,7 +110,9 @@ h1,h2,h3,h4 {
 }
 p {
     font-family: var(--para-font);
-    font-weight: 800;
+    font-weight: 100;
+    padding: 0px 10px;
+    text-align: start;
 }
 
 main section {
@@ -296,10 +298,15 @@ ul {
 .left {
     float: left;
 }
+.left, .right {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
 .discover {
     display: flex;
-    flex-direction: column;
-    width: 100%;  
+    flex-direction: column;  
 }
 
 .event, .news {
@@ -400,6 +407,7 @@ img {
     filter: blur(0em);
     transition: filter 3s;
 }
+
 
 
 

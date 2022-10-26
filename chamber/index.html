@@ -56,7 +56,9 @@
   <main>
     <div id="specialbanner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
     <section class="herobanner">
-      <img class="heroimg" src="images/wdd230-org.jpg" alt="Scenic image of Napali coast off the west side of Kauai." sizes="100vw" srcset="images/wdd230-org200.webp 800w, images/wdd230-org500.webp 1200w, images/wdd230-org800.webp 1500w">
+      <img class="heroimg" src="images/wdd230-org.jpg" alt="Scenic image of Napali coast off the west side of Kauai."
+        sizes="100vw"
+        srcset="images/wdd230-org200.webp 800w, images/wdd230-org500.webp 1200w, images/wdd230-org800.webp 1500w">
       <h2 class="heromsg">Welcome to Kauai</h2>
       <a class="herojoin-button-box" href="join.html">
         <h3 class="herojoin">Join the Chamber</h3>
@@ -76,11 +78,18 @@
 
     <section class="weather">
       <h2>Weather</h2>
-      <div class="temp"><p class="weathersymbol">🌦</p><h3><span id="temperature">50</span>°F</h3></div>
+      <div class="temp">
+        <p class="weathersymbol">🌦</p>
+        <h3><span id="temperature">50</span>°F</h3>
+      </div>
       <h3>Sunny</h3>
       <hr>
-      <div class="temp"><p>Wind Speed: <span id="windSpeed">5</span>mph</p></div>
-      <div class="temp"><p>Wind Chill: <span id="windChill">N/A</span></p></div>
+      <div class="temp">
+        <p>Wind Speed: <span id="windSpeed">5</span>mph</p>
+      </div>
+      <div class="temp">
+        <p>Wind Chill: <span id="windChill">N/A</span></p>
+      </div>
     </section>
 
     <section class="news">
@@ -102,11 +111,11 @@
     <section class="spotlights">
       <div class="sl1">
         <h2>Pacos Tacos</h2>
-        <img class="slimg" src="images/pt.jpg" alt="Pacos Tacos Logo">
+        <img class="slimg" src="images/pt.webp" alt="Pacos Tacos Logo">
         <p>"Best Mexican food on Kauai"</p>
         <hr>
         <div class="contact-info">
-          <a class="email" href="mailto:pacostacoskauai@gmail.com"  target="_blank">pacostacoskauai@gmail.com</a>
+          <a class="email" href="mailto:pacostacoskauai@gmail.com" target="_blank">pacostacoskauai@gmail.com</a>
           <a class="email" href="tel:8084314949">(808) 431-4949</a>
           <a class="email" href="https://pacostacoskauai.com/" target="_blank">https://pacostacoskauai.com/</a>
         </div>
@@ -117,7 +126,7 @@
         <p>"Die old with fruits and vegetables."</p>
         <hr>
         <div class="contact-info">
-          <a class="email" href="mailto:kge@gmail.com"  target="_blank">kge@gmail.com</a>
+          <a class="email" href="mailto:kge@gmail.com" target="_blank">kge@gmail.com</a>
           <a class="email" href="tel:8082454039">(808) 245-4039</a>
           <a class="email" href="https://kauaigrowers.webs.com/" target="_blank">https://kauaigrowers.webs.com/</a>
         </div>
@@ -128,17 +137,17 @@
         <p>"Helping you move"</p>
         <hr>
         <div class="contact-info">
-          <a class="email" href="mailto:dukekauaimovers@gmail.com"  target="_blank">dukekauaimovers@gmail.com</a>
+          <a class="email" href="mailto:dukekauaimovers@gmail.com" target="_blank">dukekauaimovers@gmail.com</a>
           <a class="email" href="tel:8086392353">(808) 639-2353</a>
           <a class="email" href="https://www.kauaimovers.com/" target="_blank">https://www.kauaimovers.com/</a>
         </div>
       </div>
     </section>
     <section class="join">
-        <a class="join-button-box" href="join.html">
+      <a class="join-button-box" href="join.html">
         <h3 class="jointxt">Join the Chamber</h3>
-        </a>
-        <p>Discover the benifits of joining the chamber of commerce!</p>
+      </a>
+      <p>Discover the benifits of joining the chamber of commerce!</p>
     </section>
   </main>
   <footer>
@@ -168,11 +177,14 @@
 
     <div>WDD 230 Project</div>
     <div>Last Updated: <span id="lastupdate"></span></div>
+    <div class="divider">|</div>
+    <div>Days Since Last Visit: <span id="lastvisit"></span></div>
   </footer>
   <script src="scripts/last-updated.js"></script>
   <script src="scripts/hamburger-button.js"></script>
   <script src="scripts/windchill.js"></script>
   <script src="scripts/mon-tue-spec.js"></script>
+  <script src="scripts/days-between-visits.js"></script>
 </body>
 
 </html>
