@@ -91,8 +91,8 @@ hr {
 }
 
 #date {
-    grid-column: 3;
-    grid-row: 1/3;
+    text-align: end;
+    padding-right: 2%;
 }
 
 header {
@@ -217,12 +217,17 @@ ul {
 .twitter {
     display: flex;
     grid-column: 3;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.navigation .socialnav {
+    padding: 0;
 }
 
 .icons {
-    border-radius: 10px;
-    margin: 0 10px;
+    border-radius: 5px;
+    margin: 0px;
     width: 3rem;
 }
 
