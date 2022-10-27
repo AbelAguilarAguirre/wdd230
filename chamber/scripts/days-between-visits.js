@@ -1,14 +1,17 @@
 const visitDisplay = document.querySelector("#lastvisit")
-let timeStamp = Date.now(window.localStorage.getItem("visit1"));
+let timeStamp = window.localStorage.getItem("visit1");
+let newStamp = Date.now(window.localStorage.getItem("visit2"));
 let numVisits = Number(window.localStorage.getItem("visits-ls"));
 if (numVisits !== 0) {
-	timeStamp = parseInt(Date.now()) - parseInt(timeStamp)
-    localStorage.setItem("visit1", timeStamp)
-    const days = Math.floor(timeStamp / (24*60*60*1000));
+	localStorage.setItem("visit2", newStamp)
+    daynum = parseInt(newStamp) - parseInt(timeStamp)
+    days = Math.floor(daynum / (24*60*60*1000));
     visitDisplay.textContent = days;
 } else {
 	visitDisplay.textContent = "This is your first visit!";
+    let timeStamp = Date.now(window.localStorage.getItem("visit1"));
+    localStorage.setItem("visit1", timeStamp);
 }
+
 numVisits++;
 localStorage.setItem("visits-ls", numVisits);
-localStorage.setItem("visit1", timeStamp)
