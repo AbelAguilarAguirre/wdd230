@@ -7,7 +7,7 @@ img {
     margin-top: 100px;
     filter: blur(0em);
     transition: filter 3s;
-    height: 300px;
+    width: 300px;
 }
 body {
     margin: 0 auto;
