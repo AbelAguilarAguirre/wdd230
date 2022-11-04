@@ -119,13 +119,13 @@
   .right {
     width: 50%;
     margin: 10px;
-    transition: all .8s;
+    transition: .8s;
     box-shadow: 0px 0px 10px 1px black;
   }
 
   .left:hover,
   .right:hover {
-    scale: 104%;
+    transform: scale(1.01);
     box-shadow: 0px 0px 100px 1px black;
   }
 
