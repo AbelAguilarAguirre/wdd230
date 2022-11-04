@@ -125,7 +125,7 @@
 
   .left:hover,
   .right:hover {
-    scale: 1.1;
+    scale: 104%;
     box-shadow: 0px 0px 100px 1px black;
   }
 
