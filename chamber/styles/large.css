@@ -51,7 +51,7 @@
   form label.sbs {
     padding: .4rem 0; 
   }
-  #jointitle, form {
+  form {
     margin: 10px;
   }
   #jointitle {
@@ -59,6 +59,7 @@
   }
   #membership {
     grid-column: 3/5;
+    margin-right: 10px;
   }
   .benefitlist {
     margin: 0 0 20px 100px;

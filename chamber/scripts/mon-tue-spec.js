@@ -13,5 +13,3 @@ document.getElementById("currentyear").innerHTML = currentYear;
 //Todays date
 document.getElementById('date').innerHTML = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(date);
 
-//current date and time
-document.getElementById('datetime').innerHTML = date
