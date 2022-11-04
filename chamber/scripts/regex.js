@@ -9,7 +9,7 @@ function testInfo(businessInput) {
 
     output.textContent = !ok
         ? `${businessInput.value} isn't written with the accepted alpha characters, hyphens, and spaces with a minimum of seven characters.`:
-        ``
+        window.location.href="http://127.0.0.1:5500/chamber/thankyou.html";
 }
 
 form.addEventListener("submit", (event) => {
