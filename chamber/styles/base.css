@@ -114,7 +114,12 @@ p {
     padding: 0px 10px;
     text-align: start;
 }
-
+#output {
+    font-size: .75rem;
+    color: red;
+    margin: 0;
+    padding: 0;
+}
 main section {
     text-align: center;
     background-color: var(--h2-background);
@@ -258,14 +263,14 @@ ul {
     z-index: 1;
 }
 
-.herojoin-button-box {
+.herojoin-button-box, form input.submitBtn {
     grid-column: 5/9;
     grid-row: 4/5;
     background: #839170;
     border-radius: 10px;
     margin: 0.83em 0px;
     text-decoration: none;
-    color: black;
+    color: white;
     box-shadow: 1px 1px 10px black;
     transition: 0.5s;
     touch-action: manipulation;
@@ -280,9 +285,9 @@ ul {
     padding: 15px;   
 }
 
-.herojoin-button-box:hover {
+.herojoin-button-box:hover, form input.submitBtn:hover{
     background-position: right center;
-    color: black;
+    color: white;
     text-decoration: none;
   }
 
@@ -414,7 +419,76 @@ img {
     transition: filter 3s;
 }
 
+form fieldset {
+    margin: 0;
+    border: 1px solid var(--h2-background);
+    padding: .5rem 2%;
+}
 
+#jointitle {
+    text-align: center;
+}
+
+form legend {
+    color: var(--h2-background);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: var(--header-background);
+    font-size: .8rem;
+}
+
+form label.top input, form label.top select, textarea{
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 90%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: var(--h1-background);
+}
+
+form input.submitBtn {
+    border: none;
+    border-radius: 5px;
+    padding: .75rem 1.5rem;
+    margin: 2% 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-top: rgba(255, 0, 0, 0.699) solid 5px;
+}
+
+form label.top input:required:valid {
+    border-top: rgba(0, 128, 0, 0.692) solid 5px;
+}
+.benefitlist {
+    margin: 0 0 20px 100px;
+    align-items: flex-start;
+    padding-bottom: 10px;
+}
+
+#membership p {
+    text-align: center;
+}
+
+#membership h2 {
+    padding-top: 20px;
+}
 
 
 

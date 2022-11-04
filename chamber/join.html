@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KCOC | Home Page | Abel Aguilar</title>
-  <meta name="description" content="Website for Kauai Chamber of Commerce. This site is a project for WDD230.">
+  <title>KCOC | Join Page | Abel Aguilar</title>
+  <meta name="description" content="Page that helps you join the commerce. This site is a project for WDD230.">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
@@ -26,10 +26,10 @@
         <h1 class="kauai">Kauai</h1>
         <h1 class="title">Chamber of Commerce</h1>
       </div>
-      
+
     </div>
     <div id="date"><span id="date"></span></div>
-    
+
     <nav>
       <ul class="navigation">
         <li>
@@ -46,17 +46,73 @@
         <li><a href="directory.html">Directory</a></li>
         <li><a class="currentpage" href="join.html">Join</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><div class="twitter">
-          <a class="socialnav" href="https://facebook.com" target="_blank"><img class="icons" src="images/facebook.png" alt="fb icon"></a>
-  
-          <a class="socialnav" href="https://twitter.com" target="_blank"><img class="icons" src="images/twitter.png"
-              alt="twitter icon"></a>
-        </div></li>
+        <li>
+          <div class="twitter">
+            <a class="socialnav" href="https://facebook.com" target="_blank"><img class="icons"
+                src="images/facebook.png" alt="fb icon"></a>
+
+            <a class="socialnav" href="https://twitter.com" target="_blank"><img class="icons" src="images/twitter.png"
+                alt="twitter icon"></a>
+          </div>
+        </li>
       </ul>
     </nav>
   </header>
   <main>
     <div id="specialbanner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
+    <h1 id="jointitle">Join The Council</h1>
+    <form id="form" action="thankyou.html" method="get">
+      <fieldset>
+        <legend>Applicant Information</legend>
+        <label class="top">First Name*<input type="text" name="fname" required></label>
+        <label class="top">Last Name*<input type="text" name="lname" required></label>
+        <label class="top">Business Position<input type="text" name="business" id="business"></label>
+        <p id="output"></p>
+        <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com" ></label>
+        <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Business Information</legend>
+        <label class="top">Business Title/Name* <input type="text" name="businessname" required></label>
+        <div>Membership Level</div>
+        <label class="sbs"><input type="radio" name="membership" value="nonprofit"> Non-Profit (no fee)</label>
+        <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze ($345)</label>
+        <label class="sbs"><input type="radio" name="membership" value="silver"> Silver ($580)</label>
+        <label class="sbs"><input type="radio" name="membership" value="gold"> Gold ($1,170)</label>
+        <label class="top">Business Description <textarea name="businessdescription" rows="6"></textarea></label>
+      </fieldset>
+      <input type="hidden" id="datetime" name="datetime" value="CurrentDateTime"> 
+      <input type="submit" value="Join the Chamber" class="submitBtn">
+    </form>
+    <section id="membership">
+      <h2>Membership Level Benifits</h2>
+      <p>Higher tiers gain benefits from all tiers below them.</p>
+      <h3>Gold/Non-Profit Tiers</h3>
+      <ul class="benefitlist">
+        <li>Elite Group of Mentors</li>
+        <li>Website Spotlight Ad</li>
+        <li>Online Directory Ad</li>
+        <li>Webinars</li>
+        <li>Training</li>
+      </ul>
+      <h3>Silver Tier</h3>
+      <ul class="benefitlist">
+        <li>Young Profesional Group</li>
+        <li>Minor Website Ad</li>
+        <li>Enhanced Directory Listing</li>
+        <li>Monthly Magazine</li>
+        <li>Mailing Lists</li>
+      </ul>
+      <h3>Bronze</h3>
+      <ul class="benefitlist">
+        <li>Business Referrals</li>
+        <li>Member Discounts</li>
+        <li>Online Directory Referrals</li>
+        <li>Business After Hours</li>
+        <li>Volunteer and Meet</li>
+        <li>Electronic Newsletter</li>
+      </ul>
+    </section>
   </main>
   <footer>
     <div>
@@ -91,6 +147,7 @@
   <script src="scripts/hamburger-button.js"></script>
   <script src="scripts/mon-tue-spec.js"></script>
   <script src="scripts/days-between-visits.js"></script>
+  <script src="scripts/regex.js"></script>
 </body>
 
 </html>

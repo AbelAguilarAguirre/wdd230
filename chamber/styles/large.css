@@ -43,9 +43,25 @@
       "join news news spotlight";
     max-width: 1438px;
     margin: 0 auto;
+    
   }
   .spotlights {
     flex-direction: column;
   }
+  form label.sbs {
+    padding: .4rem 0; 
+  }
+  #jointitle, form {
+    margin: 10px;
+  }
+  #jointitle {
+    grid-column: 2/4;
+  }
+  #membership {
+    grid-column: 3/5;
+  }
+  .benefitlist {
+    margin: 0 0 20px 100px;
+}
   
 }
