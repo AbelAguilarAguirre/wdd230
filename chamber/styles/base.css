@@ -12,7 +12,7 @@
     --h1-background: #839170;
     --h2-background: #617542;
     --h3-background: #374953;
-    --h-font: #e0dfe4;
+    --h-font: #E0FFFF;
     --p-font: #374953;
 }
 
@@ -121,7 +121,7 @@ p,li {
     font-weight: 100;
     padding: 0px 15px;
     text-align: start;
-    color: #E0FFFF;
+    color: var(--h-font);
 }
 #output {
     font-size: .75rem;
