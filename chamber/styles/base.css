@@ -121,7 +121,7 @@ p,li {
     font-weight: 100;
     padding: 0px 15px;
     text-align: start;
-    color: var(--h-font);
+    color: #E0FFFF;
 }
 #output {
     font-size: .75rem;
