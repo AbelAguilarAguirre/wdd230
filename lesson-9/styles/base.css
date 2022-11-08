@@ -1,0 +1,46 @@
+section {
+    margin: 5px;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+
+h2,p{
+    margin: 0;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace
+}
+
+div {
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 70em;
+}
+img {
+    max-width: 200px;
+    height: auto;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+}
