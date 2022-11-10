@@ -17,8 +17,19 @@ function displayProphets(prophet) {
     let p1 = document.createElement('p')
     let p2 = document.createElement('p')
     let portrait = document.createElement('img');
+    let suffix = ""
+    let sequence = prophet.order.valueOf()
+    if (sequence == 1) {
+      suffix = "st";
+    } else if (sequence == 2) {
+      suffix = "nd";
+    } else if (sequence == 3) {
+      suffix = "rd"
+    } else {
+      suffix = "th"
+    }
   
-    h2.textContent = `${prophet.name} ${prophet.lastname}`
+    h2.innerHTML = `<h2>${prophet.name} ${prophet.lastname}<br> ${prophet.order}${suffix} President</h2>`
     p1.textContent = `Date of Birth: ${prophet.birthdate}`
     p2.textContent = `Place of Birth: ${prophet.birthplace}`
   
