@@ -34,7 +34,7 @@ function displayProphets(prophet) {
     p2.textContent = `Place of Birth: ${prophet.birthplace}`
   
     portrait.setAttribute('src', prophet.imageurl);
-    portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname}`);
+    portrait.setAttribute('alt', `Portait of ${prophet.name} ${prophet.lastname} - ${prophet.order}${suffix} President`);
     portrait.setAttribute('loading', 'lazy');
   
     card.appendChild(h2);

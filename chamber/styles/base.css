@@ -437,6 +437,7 @@ form fieldset {
 #jointitle {
     text-align: center;
     margin-top: 20px;
+    color: var(--nav-primary-background);
 }
 
 form legend {
