@@ -1,4 +1,4 @@
-const requestJSON = "/json/data.json"
+const requestJSON = "https://raw.githubusercontent.com/AbelAguilarAguirre/wdd230/main/chamber/json/data.json"
 const grid = document.querySelector('.grid');
 
 fetch(requestJSON)
