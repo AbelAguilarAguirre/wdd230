@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KCOC | Join Page | Abel Aguilar</title>
+  <title>Kauai Chamber of Commerce | Join Page </title>
   <meta name="description" content="Page that helps you join the commerce. This site is a project for WDD230.">
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="stylesheet" href="styles/normalize.css">
@@ -61,29 +61,6 @@
   <main>
     <div id="specialbanner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</div>
     <h1 id="jointitle">Join The Council</h1>
-    <form id="form" action="thankyou.html" method="get">
-      <fieldset>
-        <legend>Applicant Information</legend>
-        <label class="top">First Name*<input type="text" name="fname" required></label>
-        <label class="top">Last Name*<input type="text" name="lname" required></label>
-        <label class="top">Business Position<input type="text" name="business" id="business"></label>
-        <p id="output"></p>
-        <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com" ></label>
-        <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
-      </fieldset>
-      <fieldset>
-        <legend>Business Information</legend>
-        <label class="top">Business Title/Name* <input type="text" name="businessname" required></label>
-        <div>Membership Level</div>
-        <label class="sbs"><input type="radio" name="membership" value="nonprofit"> Non-Profit (no fee)</label>
-        <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze ($345)</label>
-        <label class="sbs"><input type="radio" name="membership" value="silver"> Silver ($580)</label>
-        <label class="sbs"><input type="radio" name="membership" value="gold"> Gold ($1,170)</label>
-        <label class="top">Business Description <textarea name="businessdescription" rows="6"></textarea></label>
-      </fieldset>
-      <input type="hidden" id="datetime" name="datetime" value="CurrentDateTime"> 
-      <input type="submit" value="Join the Chamber" class="submitBtn">
-    </form>
     <section id="membership">
       <h2>Membership Level Benifits</h2>
       <p>Higher tiers gain benefits from all tiers below them.</p>
@@ -113,6 +90,30 @@
         <li>Electronic Newsletter</li>
       </ul>
     </section>
+    <form id="form" action="thankyou.html" method="get">
+      <fieldset>
+        <legend>Applicant Information</legend>
+        <label class="top">First Name*<input type="text" name="fname" required></label>
+        <label class="top">Last Name*<input type="text" name="lname" required></label>
+        <label class="top">Business Position<input type="text" name="business" id="business"></label>
+        <p id="output"></p>
+        <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+        <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Business Information</legend>
+        <label class="top">Business Title/Name* <input type="text" name="businessname" required></label>
+        <div>Membership Level</div>
+        <label class="sbs"><input type="radio" name="membership" value="nonprofit"> Non-Profit (no fee)</label>
+        <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze ($345)</label>
+        <label class="sbs"><input type="radio" name="membership" value="silver"> Silver ($580)</label>
+        <label class="sbs"><input type="radio" name="membership" value="gold"> Gold ($1,170)</label>
+        <label class="top">Business Description <textarea name="businessdescription" rows="6"></textarea></label>
+      </fieldset>
+      <input type="hidden" id="datetime" name="datetime" value="CurrentDateTime"> 
+      <input type="submit" value="Join the Chamber" class="submitBtn">
+    </form>
+    
   </main>
   <footer>
     <div>
