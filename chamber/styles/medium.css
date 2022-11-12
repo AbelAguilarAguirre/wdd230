@@ -159,4 +159,8 @@
   .menu button {
     width: 25%;
   }
+  form input.submitBtn{
+    margin: 2% 0 10px 20vw;
+    max-width: 20rem;
+  }
 }
