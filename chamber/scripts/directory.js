@@ -1,4 +1,4 @@
-const requestJSON = "/chamber/json/data.json"
+const requestJSON = "chamber/json/data.json"
 const grid = document.querySelector('.grid');
 
 fetch(requestJSON)
