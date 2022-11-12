@@ -156,4 +156,7 @@
   article {
     margin: 10px;
   }
+  .menu button {
+    width: 25%;
+  }
 }

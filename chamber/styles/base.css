@@ -531,7 +531,8 @@ form label.top input:required:valid {
     border-radius: 5px;
 }
 .menu button {
-    width: 25%;
+    width: 200px;
+    height: 50px;
     background-image: linear-gradient(45deg, #c5c5c5 0%, #FAFAFA  51%, #c5c5c5  100%);
     margin: 10px 70px;
     padding: 10px;
