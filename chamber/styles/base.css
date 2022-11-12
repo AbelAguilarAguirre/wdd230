@@ -116,13 +116,23 @@ h1 {
     padding: 10px 10px;
     font-weight: 200;
 }
-p,li {
+.discp, li {
     font-family: var(--para-font);
     font-weight: 100;
     padding: 0px 15px;
     text-align: start;
     color: var(--h-font);
 }
+
+p{
+    font-family: var(--para-font);
+    font-weight: 100;
+    padding: 0px 15px;
+    text-align: center;
+    color: var(--h-font);
+}
+ 
+
 #output {
     font-size: .75rem;
     color: red;
@@ -503,5 +513,83 @@ form label.top input:required:valid {
 
 
 
+/* directory */
+#dirmain {
+    display: block;
+}
+#dirtitle {
+    text-align: center;
+    color: var(--nav-primary-background);
+}
+
+.menu {
+    margin: 1rem auto;
+    border: 1px solid var(--h3-background);
+    padding: 0.5rem;
+	background-color: var(--h1-background);
+	text-align: center;
+    border-radius: 5px;
+}
+.menu button {
+    width: 25%;
+    background-image: linear-gradient(45deg, #c5c5c5 0%, #FAFAFA  51%, #c5c5c5  100%);
+    margin: 10px 70px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px black;
+    text-decoration: none;
+    color: #374953;
+    transition: 0.5s;
+    background-size: 200% auto;
+}
+.menu button:hover {
+    background-position: right center;
+    color: black;
+    text-decoration: none;
+}
 
 
+section {
+	padding: 0.5rem;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	align-items: center;
+    gap: 10px;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+}
+.list section {
+	display: flex;
+	align-items: center;
+    flex-wrap: wrap;
+}
+.grid section {
+	flex-direction: column;
+	text-align: center;
+    justify-content: space-around;
+    height: 500px;
+}
+
+.list section {
+	flex-direction: row;
+	justify-content: space-around;
+}
+.list section img {
+	display: none;
+}
+section h3 {
+	font-size: 1.5rem;
+    padding: 10px 0 0 0;
+}
+.list img {
+	height: auto;
+	max-width: 10%; 
+}
+.grid img {
+    height: auto;
+    max-width: 75%;
+}

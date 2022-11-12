@@ -150,4 +150,10 @@
   .benefitlist {
     margin: 0 0 20px 10px;
 }
+  .list section img {
+    display: block;
+    }
+  article {
+    margin: 10px;
+  }
 }

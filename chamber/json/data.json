@@ -1,0 +1,86 @@
+{
+    "businesses" : [
+        {
+            "name": "Paco's Tacos",
+            "address": "2545 Kiahuna Plantation Drive, Poipu, Kauai, Hawaii 96756",
+            "phone": "(808)431-4949",
+            "url": "https://pacostacoskauai.com/",
+            "image": "https://i0.wp.com/pacostacoskauai.com/wp-content/uploads/2019/06/logo2-pacos_tacos.png?fit=542%2C413&ssl=1",
+            "membership": "gold"
+
+        },
+        {
+            "name": "Kauai Growers Exchange Inc",
+            "address": "3094 Peleke Street, Lihue, Kauai, HI 96766",
+            "phone": "(808)245-4039",
+            "url": "https://kauaigrowers.webs.com/",
+            "image": "https://abelaguilaraguirre.github.io/wdd230/chamber/images/kge.png",
+            "membership": "gold"
+
+        },
+        {
+            "name": "Kauai Movers",
+            "address": "4-1176 Kuhio Highway, Kapa'a, HI 96746 US",
+            "phone": "(808)639-2353",
+            "url": "https://www.kauaimovers.com/",
+            "image": "https://d3ciwvs59ifrt8.cloudfront.net/250a8797-d3e5-4d9c-9361-f4a3fb144517/7012a4b4-7437-4ff6-91c4-9e0996d0a8ef.png",
+            "membership": "gold"
+
+        },
+        {
+            "name": "Island Helicopters Kauai",
+            "address": "3788 Ahukini Road, Lihue, HI 96766",
+            "phone": "(808)245-8588",
+            "url": "https://islandhelicopters.com/",
+            "image": "https://www.sunshinehelicopters.com/images/portal/sunshine.png",
+            "membership": "silver"
+
+        },
+        {
+            "name": "Da Kine Images LLC",
+            "address": "P.O. Box 954, Lawai, HI 96765",
+            "phone": "(808)639-1870",
+            "url": "https://www.dakineimages.com/",
+            "image": "https://static.wixstatic.com/media/2214b2_f5fcd2df3c8d49438f1d7f0c5aff9bf2~mv2.png/v1/fill/w_424,h_282,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Drone%2520Kauai%2520-%2520Da%2520Kine%2520Images_e.png",
+            "membership": "silver"
+
+        },
+        {
+            "name": "Earthworks Pacific, Inc.",
+            "address": "4180 Hoala Street, Lihue, HI 96766",
+            "phone": "(808)246-8808",
+            "url": "https://earthworkspacific.com/",
+            "image": "https://earthworkspacific.com/wp-content/uploads/2020/08/cropped-EPI_logo_Vector_white.png",
+            "membership": "silver"
+
+        },
+        {
+            "name": "Blue Dolphin Charters, Ltd.",
+            "address": "4353 Waialo Rd, Eleele, HI 96705",
+            "phone": "(808)335-5553",
+            "url": "https://bluedolphinkauai.com/",
+            "image": "https://bluedolphinkauai.com/wp-content/uploads/2021/11/Blue-Dolphin-Color-Logo-With-Kauai-Hawaii.svg",
+            "membership": "bronze"
+
+        },
+        {
+            "name": "Island Metals",
+            "address": "3-4051 Kuhio Hwy, Lihue, HI 96766",
+            "phone": "(808)246-6600",
+            "url": "https://www.islandmetals.com/",
+            "image": "https://www.islandmetals.com/uploads/1/2/4/1/124198581/published/logo-design.png?1595723729",
+            "membership": "bronze"
+
+        },
+        {
+            "name": "Tire Warehouse Kauai",
+            "address": "3028 Aukele Street, Lihue, HI 96766",
+            "phone": "(808)245-6754",
+            "url": "https://tirewarehousekauai.com/",
+            "image": "https://tirewarehousekauai.com/images/display/284/tire-warehouse-logo.png",
+            "membership": "bronze"
+
+        }
+
+    ]
+}
