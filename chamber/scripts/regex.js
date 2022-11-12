@@ -2,7 +2,7 @@ const form = document.querySelector('#form');
 const input = document.querySelector('#business');
 const output = document.querySelector('#output');
 
-const re = /^[ \w-]{7,}/;
+const re = /(^$|^[ \w-]{7,}$)/;
 
 function testInfo(businessInput) {
     const ok = re.exec(businessInput.value);
