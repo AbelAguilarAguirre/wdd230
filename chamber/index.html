@@ -82,14 +82,15 @@
 
     <section class="weather">
       <h2>Weather</h2>
-      <div class="temp">
-        <p class="weathersymbol">🌦</p>
-        <h3><span id="temperature">50</span>°F</h3>
-      </div>
-      <h3>Sunny</h3>
+      <figure class="temp">
+        <img src="" alt="" id="weather-icon"/>
+        <h3><span id="current-temp"></span>°F</h3>
+        
+      </figure>
+      <h3 id="caption"></h3>
       <hr>
       <div class="temp">
-        <p>Wind Speed: <span id="windSpeed">5</span>mph</p>
+        <p>Wind Speed: <span id="windSpeed"></span>mph</p>
       </div>
       <div class="temp">
         <p>Wind Chill: <span id="windChill"></span></p>
@@ -181,7 +182,7 @@
 
     <div>WDD 230 Project</div>
     <div class="divider">|</div>
-    <div>Weather by OpenWeatherMap</div>
+    <div><a href="https://openweathermap.org/" target="blank">Weather by OpenWeatherMap</a></div>
     <div class="divider">|</div>
     <div>Last Updated: <span id="lastupdate"></span></div>
     <div class="divider">|</div>
@@ -189,10 +190,10 @@
   </footer>
   <script src="scripts/last-updated.js"></script>
   <script src="scripts/hamburger-button.js"></script>
-  <script src="scripts/windchill.js"></script>
   <script src="scripts/mon-tue-spec.js"></script>
   <script src="scripts/days-between-visits.js"></script>
   <script src="scripts/lazyload.js"></script>
+  <script src="scripts/weatherapi.js"></script>
 </body>
 
 </html>

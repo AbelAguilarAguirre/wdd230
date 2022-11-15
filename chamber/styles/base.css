@@ -346,10 +346,9 @@ ul {
     justify-content: center;
 }
 
-.weathersymbol {
-    font-size: 8rem;
-    font-weight: normal;
-    margin: 0;
+#weather-icon {
+    height: auto;
+    width: 100px;
 }
 
 .temp {
