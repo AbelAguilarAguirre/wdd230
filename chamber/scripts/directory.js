@@ -19,10 +19,10 @@ fetch(requestJSON)
     let p3 = document.createElement('p')
     let logo = document.createElement('img');
   
-    h3.innerHTML = `<h3>${business.name}</h3>`
+    h3.textContent = `${business.name}`
     p1.textContent = `${business.address}`
     p2.textContent = `${business.phone}`
-    p3.textContent = `${business.url}`
+    p3.innerHTML = `<a href="${business.url}" target="blank">${business.url}</a>`
     logo.setAttribute('src', business.image);
     logo.setAttribute('alt', `${business.name}'s Logo`);
     logo.setAttribute('loading', 'lazy');

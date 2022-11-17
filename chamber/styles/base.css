@@ -406,7 +406,7 @@ footer {
     display: none;
 }
 
-footer a {
+a {
     text-decoration: none;
     margin: auto;
     color: var(--header-font-color);
@@ -417,7 +417,7 @@ footer div {
     padding: 0 10px;
 }
 
-footer a:hover {
+a:hover {
     color: var(--nav-secondary-font);
 
 }
@@ -582,7 +582,7 @@ section {
 	flex-direction: column;
 	text-align: center;
     justify-content: space-around;
-    height: 500px;
+    height: 400px;
 }
 
 .list section {
@@ -599,8 +599,10 @@ section h3 {
 .list img {
 	height: auto;
 	max-width: 10%; 
+    width: 130px;
 }
 .grid img {
-    height: auto;
+    height: 130px;
     max-width: 75%;
+    width: auto;
 }
