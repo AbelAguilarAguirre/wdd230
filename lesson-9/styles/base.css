@@ -3,9 +3,13 @@ section {
     border: 1px black solid;
     border-radius: 5px;
 }
+h2 {
+    font-size: 1.5rem;
+}
 
 h2,p{
     margin: 0;
+
 }
 
 body {
@@ -42,5 +46,5 @@ img {
 
 .cards {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto;
 }
