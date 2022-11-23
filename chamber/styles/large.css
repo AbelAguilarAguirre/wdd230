@@ -64,4 +64,8 @@
   .benefitlist {
     margin: 0 0 20px 100px;
   }
+  #map {
+    grid-column: 3/5;
+    grid-row: 6/7;
+  }
 }

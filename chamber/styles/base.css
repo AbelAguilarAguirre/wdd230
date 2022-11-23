@@ -51,7 +51,7 @@ body {
 .spotlights {
     grid-area: spotlight;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 10px;
     flex-direction: column;
   }
@@ -408,7 +408,6 @@ footer {
 
 a {
     text-decoration: none;
-    margin: auto;
     color: var(--header-font-color);
     font-style: var(--header-font);
 }
@@ -500,11 +499,11 @@ form input.submitBtn {
     z-index: 1;
 }
 
-form label.top input:required {
+form label.top input:required, textarea:required {
     border-top: rgba(255, 0, 0, 0.699) solid 5px;
 }
 
-form label.top input:required:valid {
+form label.top input:required:valid, textarea:required:valid {
     border-top: rgba(0, 128, 0, 0.692) solid 5px;
 }
 .benefitlist {
@@ -593,7 +592,6 @@ section {
 	display: none;
 }
 section h3 {
-	font-size: 1.5rem;
     padding: 10px 0 0 0;
 }
 .list img {
@@ -605,4 +603,15 @@ section h3 {
     height: 130px;
     max-width: 75%;
     width: auto;
+}
+
+/*Contact page*/
+
+#address{
+    text-align: start;
+    padding-left: 30%;
+}
+#map{
+    overflow: hidden;
+    padding: 0;
 }
