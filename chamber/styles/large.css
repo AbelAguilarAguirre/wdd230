@@ -30,7 +30,7 @@
   .navigation li:first-child {
     display: none;
   }
-  .sl3 {
+  main section.spotlights div:nth-child(3) {
     display: block;
   }
 

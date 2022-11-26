@@ -357,12 +357,12 @@ ul {
     justify-content: center;
 }
 
-.sl1, .sl3 {
+.sl1 {
     margin: 5px;
     border: 3px #374953 solid;
     padding: 10px;
 }
-.join, .sl3 {
+.join, main section.spotlights div:nth-child(3) {
     display: none;
 }
 
