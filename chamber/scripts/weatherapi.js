@@ -45,8 +45,5 @@ function displayResults(weatherData) {
     } else {
         windChill.textContent = "N/A"
     }
-
-
-    console.log(temperature, wSpeed, result)
 };
 
