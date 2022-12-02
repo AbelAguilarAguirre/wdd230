@@ -362,7 +362,7 @@ ul {
     border: 3px #374953 solid;
     padding: 10px;
 }
-.join, main section.spotlights div:nth-child(3) {
+.join, main section.spotlights div:nth-child() {
     display: none;
 }
 
