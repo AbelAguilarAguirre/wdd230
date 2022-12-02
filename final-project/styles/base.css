@@ -32,6 +32,7 @@
     border-radius: 5px;
     filter: blur(0em);
     transition: filter 1.5s;
+    max-width: 107px;
 }
 .logo img[data-src] {
     min-width: 50px;
