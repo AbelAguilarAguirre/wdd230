@@ -1,108 +1,326 @@
-:root{
-    --header-background: #000036;
-    --header-font-color: #FFC6D9;
-    --header-font: 'Lemonada', serif, sans-serif;
-    --para-font: 'Ubuntu', sans-serif;
-    --nav-primary-background: #F3752B;
-    --nav-primary-font: #000036;
-    --nav-secondary-background: #7B5E7B;
-    --nav-secondary-font: #F3752B;
-    --current-page-background: #ffffff;
-    --h-font: #7B5E7B;
-    --p-font: #000036;
+:root {
+  --header-background: #000036;
+  --header-font-color: #ffc6d9;
+  --header-font: "Lemonada", serif, sans-serif;
+  --para-font: "Ubuntu", sans-serif;
+  --nav-primary-background: #f3752b;
+  --nav-primary-font: #000036;
+  --nav-secondary-background: #7b5e7b;
+  --nav-secondary-font: #f3752b;
+  --current-page-background: #fff;
+  --h-font: #7b5e7b;
+  --p-font: #000036;
 }
-/* header */
-.logobox{
-    margin: 0 auto;
-    max-width: 100%;
-    background-color: var(--header-background);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.logo{
-    width: 25%;
-    height: auto;
-    margin: 10px;
-}
-.logo img{
-    width: 100%;
-    border-radius: 5px;
-    filter: blur(0em);
-    transition: filter 1.5s;
-    max-width: 107px;
-}
-.logo img[data-src] {
-    min-width: 50px;
-    min-height: 50px;
-    filter: blur(0.3em);
-}
-.siteheader{
-    font-family: var(--header-font);
-    font-size: 40px;
-    color: var(--header-font-color);
-    margin: 0 10px;
-    text-align: center;
 
+body {
+  max-width: 425px;
 }
-/* hamburger button */
-.ham{
-    max-width: 63px;
+
+/* --------------------------------------font sizes------------------------------------- */
+h1,
+h2,
+h3 {
+  font-family: var(--header-font);
 }
+
+p {
+  font-family: var(--para-font);
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/* ----------------------------------------header------------------------------------------------- */
+.logobox {
+  margin: 0 auto;
+  max-width: 100%;
+  background-color: var(--header-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo,
+.footerlogo {
+  width: 25%;
+  height: auto;
+  margin: 10px;
+}
+
+.logo img,
+.footerlogo img {
+  width: 100%;
+  border-radius: 5px;
+  filter: blur(0);
+  transition: filter 1.5s;
+  max-width: 107px;
+}
+
+.logo img[data-src] {
+  min-width: 50px;
+  min-height: 50px;
+  filter: blur(0.3em);
+  transition: 1.5s;
+}
+
+.siteheader {
+  font-family: var(--header-font);
+  font-size: 40px;
+  color: var(--header-font-color);
+  margin: 0 10px;
+  text-align: center;
+}
+
+/* --------------------------------------hamburger button & Navigation------------------------------------- */
+.ham {
+  max-width: 63px;
+}
+
 .bar1,
 .bar2,
 .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: var(--p-font);
-    margin: 6px 0;
-    transition: 0.4s;
-    border-radius: 50px;
+  width: 35px;
+  height: 5px;
+  background-color: var(--p-font);
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 50px;
 }
+
 .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
+  transform: translate(0, 11px) rotate(-45deg);
 }
+
 .change .bar2 {
-    opacity: 0;
+  opacity: 0;
 }
+
 .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
+  transform: translate(0, -11px) rotate(45deg);
 }
-.navigation li:first-child {
-    display: block;
-    max-width: 63px;
-    margin: 0 auto;
-}
-.navigation {
-    list-style: none;
-    padding: 0;
-    font-family: var(--header-font);
-    font-size: 30px;
-}
+
 .navigation li {
-    display: none;
-    margin-top: 2px;
+  display: none;
+  margin-top: 10px;
+  transition: 0.5s;
 }
+
 .responsive li {
-    display: block;
-    text-align: center;
-    justify-content: center;
+  display: block;
+  text-align: center;
+  justify-content: center;
 }
-.navigation a{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 0.75rem;
-    text-decoration: none;
-    color: var(--nav-primary-font);
-    transition: 0.5s;
-    background-color: var(--nav-primary-background);
-    border-radius: 5px;
-    justify-content: center;
+
+.navigation li:first-child {
+  display: block;
+  max-width: 63px;
+  margin: 0 auto;
 }
-.navigation li .currentpage{
-    background-color: var(--nav-secondary-background);
-    color: var(--nav-secondary-font);
+
+.navigation li:hover:nth-child(odd) {
+  transition: 0.5s;
+  transform: skew(5deg, -5deg);
+}
+
+.navigation li:hover:nth-child(even) {
+  transition: 0.5s;
+  transform: skew(-5deg, 5deg);
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  font-family: var(--header-font);
+  font-size: 30px;
+}
+
+.navigation a {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: var(--nav-primary-font);
+  transition: 0.5s;
+  background-color: var(--nav-primary-background);
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.navigation li .currentpage {
+  background-color: var(--nav-secondary-background);
+  color: var(--nav-secondary-font);
+}
+
+/* --------------------Footer------------------------------------------------------- */
+footer {
+  font-family: var(--header-font);
+  background-color: var(--nav-secondary-background);
+  margin-top: 10px;
+  text-align: center;
+  color: var(--nav-secondary-font);
+  padding: 5px;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+.footerlogo img {
+  max-width: 58px;
+  transition: 0.5s;
+  box-shadow: 0 0 20px var(--header-background);
+}
+
+.footerlogo img:hover {
+  transform: skew(5deg, -5deg);
+  transition: 0.5s;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--nav-primary-font);
+  transition: 0.5s;
+}
+
+.link:hover {
+  color: var(--header-font-color);
+  transition: 0.5s;
+}
+
+hr {
+  border-top: 1px dashed var(--header-font-color);
+  border-bottom: 0;
+}
+
+.lastupdated {
+  font-style: italic;
+}
+
+/* -------------------------------------Home Banner ----------------------------- */
+.home-banner {
+  max-width: 425px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  margin-bottom: 10px;
+}
+
+.home-banner-img {
+  max-width: 425px;
+  height: auto;
+  width: 100%;
+  grid-row: 1/6;
+  grid-column: 1/5;
+  filter: blur(0);
+  transition: 0.5s;
+}
+
+.home-banner-img[data-src] {
+  filter: blur(0.5em);
+  transition: 0.5s;
+  max-width: 425px;
+  height: auto;
+  width: 100%;
+}
+
+.home-banner-a {
+  background-color: var(--header-background);
+  text-align: center;
+  grid-row: 4/6;
+  grid-column: 2/4;
+  border-radius: 10px;
+  color: var(--nav-secondary-font);
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.home-banner-a:hover {
+  transition: 0.5s;
+  background-color: var(--nav-primary-background);
+  color: var(--nav-primary-font);
+  transform: skew(-5deg, 5deg);
+}
+
+/* ----------------------------------------------Coastal Area----------------------- */
+.coastal-area {
+  background-color: #ffc6d96c;
+}
+
+.coastal-area-header {
+  text-align: center;
+}
+
+.coastal-area-msg {
+  padding: 15px;
+}
+
+/* -------------------------------------------Social Media -------------------------- */
+.social-media {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.social-media-img {
+  grid-column: 1/6;
+  grid-row: 1/6;
+}
+
+.social-media h1 {
+  grid-column: 2/5;
+  grid-row: 1/2;
+  z-index: 1;
+  text-align: center;
+}
+
+.facebook {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  z-index: 1;
+  transition: 0.5s;
+  place-self: center;
+}
+
+.twitter {
+  grid-column: 4/5;
+  grid-row: 3/4;
+  z-index: 1;
+  transition: 0.5s;
+  place-self: center;
+}
+
+.instagram {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  z-index: 1;
+  transition: 0.5s;
+  place-self: center;
+}
+
+.facebook:hover,
+.instagram:hover {
+  transition: 0.5s;
+  transform: skew(-5deg, 5deg);
+}
+
+.twitter:hover {
+  transition: 0.5s;
+  transform: skew(5deg, -5deg);
+}
+
+/* ------------------------------------Weather------------------------------*/
+.weather {
+  padding: 15px;
+  text-align: center;
 }

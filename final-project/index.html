@@ -22,7 +22,7 @@
 <body>
     <header>
         <div class="logobox">
-            <a class="logo " href="index.html"><img src="images/bf-logo-placeholder.webp" alt="Bountiful Foods Logo"
+            <a class="logo" href="index.html"><img src="images/bf-logo-placeholder.webp" alt="Bountiful Foods Logo"
                     data-src="images/bf-logo.webp"></a>
             <h1 class="siteheader">Bountiful Foods</h1>
             <nav>
@@ -42,10 +42,78 @@
             </nav>
         </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <div class="home-banner">
+            <img class="home-banner-img" src="images/home-banner-placeholder.webp" alt="Fresh fruits and veggies"
+                data-src="images/home-banner.webp">
+            <a class="link home-banner-a" href="fresh.html">
+                <h2 class="home-banner-button">Order a Smoothie</h2>
+            </a>
+        </div>
+        <div class="coastal-area">
+            <img class="home-banner-img" src="images/coastal-area-placeholder.webp" alt="Oceanside Pier"
+                data-src="images/coastal-area.webp">
+            <section>
+                <h2 class="coastal-area-header">Welcome to Oceanside</h2>
+                <p class="coastal-area-msg">"Oceanside is a true SoCal beach town with a tangible laid-back vibe. The
+                    city boasts spectacular
+                    year-round weather, gorgeous beaches, a historic wooden pier, quaint New England-style harbor, and
+                    charming bungalow neighborhoods.<br><br>
+
+                    O’side (as locals affectionately call it) is a destination of discovery where you can explore
+                    everything from awe-inspiring sea life through exciting ocean adventures, California history at the
+                    “King of Missions,” and surf culture at the California Surf Museum. As a playful and diverse
+                    destination, we value personal expression and originality, inviting you to play in a real SoCal
+                    beach town and Respect the O’riginals."* <br> And most importantly where we have one of our fruit
+                    trucks, right on the amazing Oceanside pier.</p>
+            </section>
+        </div>
+        <div class="weather">
+            <h2>Carlsbad Forecast</h2>
+            <div class="today">
+                <h3><span class="current-temp"></span>°F</h3>
+                <h3 class="caption"></h3>
+                <h3>Current Humidity:<span class="humidity"></span></h3>
+            </div>
+        </div>
+        <div class="social-media">
+            <img class="home-banner-img social-media-img" src="images/social-media-placeholder.webp"
+                alt="Image of our fruit smoothies" data-src="images/social-media.webp">
+            <h1>Follow us on social media!</h1>
+            <a class="facebook" href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png"
+                    alt="facebook logo"></a>
+            <a class="twitter" href="https://twitter.com/home" target="_blank"><img src="images/twitter.png"
+                    alt="twitter logo"></a>
+            <a class="instagram" href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png"
+                    alt="instagram logo"></a>
+        </div>
+    </main>
+    <footer>
+        <div class="content">
+            <a class="footerlogo" href="index.html"><img src="images/bf-logo-placeholder.webp"
+                    alt="Bountiful Foods Logo" data-src="images/bf-logo.webp"></a>
+            <h3><strong>Bountiful Foods</strong></h3>
+            <a class="link" href="https://goo.gl/maps/Bv6hVjGnB3Kaxfar5" target="_blank">
+                <p>1 Barnard Dr, Oceanside, CA 92056-3899, USA</p>
+            </a>
+            <a class="link" href="tel:1234567890">
+                <p>(123)456-7890</p>
+            </a>
+            <a class="link" href="bountifulfoods@gmail.com">
+                <p>bountifulfoods@gmail.com</p>
+            </a>
+        </div>
+        <hr>
+        <div>
+            <p>&copy;<span class="currentyear"></span> | <a class="link" href="attribution.html">Resources*</a> | Last
+                Updated: <span class="lastupdated"></span></p>
+        </div>
+    </footer>
     <script src="scripts/lazyload.js"></script>
     <script src="scripts/hamburger-menu.js"></script>
+    <script src="scripts/current-year.js"></script>
+    <script src="scripts/last-updated.js"></script>
+    <script src="scripts/weatherapi.js"></script>
 </body>
 
 </html>
