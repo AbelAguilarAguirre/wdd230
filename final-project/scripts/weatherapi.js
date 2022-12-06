@@ -1,7 +1,7 @@
 const currentTemp = document.querySelector('.current-temp');
 const humidity = document.querySelector('.humidity');
 const captionDesc = document.querySelector('.caption');
-const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=33.15&lon=117.35&appid=c36ca3679f5d7442919c8881933c321b&units=imperial'
+const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=33.1581&lon=-117.3506&appid=c36ca3679f5d7442919c8881933c321b&units=imperial';
 async function apiFetch() {
     try {
         const response = await fetch(url);
@@ -15,11 +15,11 @@ async function apiFetch() {
         console.log(error);
     }
 };
-
+console.log(url)
 apiFetch();
 
 function displayResults(weatherData) {
-    humidity.textContent = weatherData.current.humidity
+    humidity.textContent = weatherData.current.humidity;
     currentTemp.innerHTML = `<strong>${weatherData.current.temp.toFixed(0)}</strong>`;
     const desc = weatherData.current.weather[0].description;
     const arr = desc.split(" ");

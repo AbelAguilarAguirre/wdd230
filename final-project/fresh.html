@@ -42,25 +42,54 @@
             </nav>
         </div>
     </header>
-    <main></main>
+    <main>
+
+        <form class="form">
+            <fieldset>
+                <legend>
+                    <h1>Order your Specialty Drink Here</h1>
+                </legend>
+                <label><h3>First Name*</h3><br><input type="text" name="fname" class="name input" required><br></label>
+                <label><h3>Email*</h3><br><input type="email" name="email" placeholder="someone@gmail.com" class="email input" required><br></label>
+                <label><h3>Phone Number*</h3><br><input type="tel" name="phone" placeholder="1235551234" class="phonenumber input" required><br><span class="output"></span></label>
+                
+                <span class="options">
+                    <h3>Choose Your Juice:</h3>
+                </span>
+                <label><h3>Special Instructions</h3><br> <textarea name="specialinstructions"
+                        rows="6"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Place Your Order" class="submitBtn">
+            <span class="thankyou"></span>
+        </form>
+    </main>
     <footer>
         <div class="content">
-            <a class="footerlogo" href="index.html"><img src="images/bf-logo-placeholder.webp" alt="Bountiful Foods Logo"
-                data-src="images/bf-logo.webp"></a>
+            <a class="footerlogo" href="index.html"><img src="images/bf-logo-placeholder.webp"
+                    alt="Bountiful Foods Logo" data-src="images/bf-logo.webp"></a>
             <h3><strong>Bountiful Foods</strong></h3>
-            <a class="link" href="https://goo.gl/maps/Bv6hVjGnB3Kaxfar5" target="_blank"><p>1 Barnard Dr, Oceanside, CA 92056-3899, USA</p></a>
-            <a class="link" href="tel:1234567890"><p>(123)456-7890</p></a>
-            <a class="link" href="bountifulfoods@gmail.com"><p>bountifulfoods@gmail.com</p></a>
+            <a class="link" href="https://goo.gl/maps/Bv6hVjGnB3Kaxfar5" target="_blank">
+                <p>1 Barnard Dr, Oceanside, CA 92056-3899, USA</p>
+            </a>
+            <a class="link" href="tel:1234567890">
+                <p>(123)456-7890</p>
+            </a>
+            <a class="link" href="bountifulfoods@gmail.com">
+                <p>bountifulfoods@gmail.com</p>
+            </a>
         </div>
         <hr>
         <div>
-            <p>&copy;<span class="currentyear"></span> | <a class="link" href="attribution.html">Resources</a> | Last Updated: <span class="lastupdated"></span></p>
+            <p>&copy;<span class="currentyear"></span> | <a class="link" href="attribution.html">Resources</a> | Last
+                Updated: <span class="lastupdated"></span></p>
         </div>
     </footer>
     <script src="scripts/lazyload.js"></script>
     <script src="scripts/hamburger-menu.js"></script>
     <script src="scripts/current-year.js"></script>
     <script src="scripts/last-updated.js"></script>
+    <script src="scripts/fruit.js"></script>
+    <script src="scripts/regex.js"></script>
 </body>
 
 </html>
