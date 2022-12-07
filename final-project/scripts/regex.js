@@ -9,8 +9,9 @@ function testInfo(orderInput) {
     const ok = re.exec(orderInput.value);
 
     output.textContent = !ok
-        ? `${orderInput.value} isn't written with the accepted phone number style. Try just numbers with no separators.`:
+        ? `${orderInput.value} isn't written with the accepted phone number style. Try just numbers with no separators.` :
         " ";
+
 }
 
 
@@ -20,7 +21,7 @@ function thanksMsg() {
     let email = document.querySelector(".email").value
     let phone = document.querySelector(".phonenumber").value
     let currentdate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(date);
-    
+
 
     let card = document.createElement('div');
     let p1 = document.createElement('p');
@@ -39,46 +40,22 @@ function thanksMsg() {
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     testInfo(input);
-    thanksMsg();
-    
+    if (good_or_bad) {
+        thanksMsg();
+    }
+
 });
 
-(function() {
-    function addValidation(checkboxes) {
-        const firstCheckbox = getFirstCheckbox(checkboxes);
+function handleData() {
+    var form_data = new FormData(document.querySelector("form"));
     
-        if (firstCheckbox) {
-            for (let i = 0; i < checkboxes.length; i++) {
-                checkboxes[i].addEventListener('change', function() {
-                    checkValidity(checkboxes, firstCheckbox);
-                });
-            }
-
-            checkValidity(checkboxes, firstCheckbox);
-        }
+    if (!form_data.has("fruit")) {
+        document.getElementById("chk_option_error").style.visibility = "visible";
+        return good_or_bad = false;
     }
-    
-    function getFirstCheckbox(checkboxes) {
-        return checkboxes.length > 0 ? checkboxes[0] : null;
+    else {
+        document.getElementById("chk_option_error").style.visibility = "hidden";
+        return good_or_bad = true;
     }
 
-    function isChecked(checkboxes) {
-        for (let i = 0; i < checkboxes.length; i++) {
-            if (checkboxes[i].checked) return true;
-        }
-
-        return false;
-    }
-
-    function checkValidity(checkboxes, firstCheckbox) {
-        const errorMessage = !isChecked(checkboxes) ? 'At least one checkbox must be selected.' : '';
-        firstCheckbox.setCustomValidity(errorMessage);
-    }
-
-        const form = document.querySelector('.form');
-    
-    // Let's add a validation for the first group of checkboxes
-    const checkboxes = form.querySelectorAll('.checkbox');
-    addValidation(checkboxes);
-    
-});
+}
