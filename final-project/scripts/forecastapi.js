@@ -1,13 +1,12 @@
-const currentTemp = document.querySelector('.current-temp');
-const humidity = document.querySelector('.humidity');
-const captionDesc = document.querySelector('.caption');
-const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&lon=-117.3506&appid=e01cc28e23298de71ebebd1f654ffdd7&units=imperial';
+const weather = document.querySelector('.weather')
+const Forcasturl = 'https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&lon=-117.3506&appid=e01cc28e23298de71ebebd1f654ffdd7&units=imperial';
 async function apiFetch() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(Forcasturl);
         if (response.ok) {
             const data = await response.json();
-            displayResults(data);
+            for (let i = 0; i < 3; ++i) {
+                displayForcast(data, i);}
         } else {
             throw Error(await response.text());
         }
@@ -15,20 +14,21 @@ async function apiFetch() {
         console.log(error);
     }
 };
-console.log(url)
 apiFetch();
 
-function displayResults(weatherData) {
-    humidity.textContent = ` ${weatherData.main.humidity}`;
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-    const desc = weatherData.weather[0].description;
-    const arr = desc.split(" ");
-    for (var i = 0; i < arr.length; i++) {
-        arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
-    }
-    console.log(desc)
-    const desc2 = arr.join(" ");
-    captionDesc.textContent = desc2;
+function displayForcast(data, i) {
+    date.setDate(tomorrow.getDate()+ i)
+    let forecastDate = date
+    let dia = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(forecastDate);
+    let div = document.createElement("div")
+    div.setAttribute('class', 'day')
+    let h2 = document.createElement("h2")
+    h2.textContent = `Temp: ${data.list[i].main.temp.toFixed(0)}°F`
+    let h3 = document.createElement("h3")
+    h3.textContent = dia
 
+    div.appendChild(h3)
+    div.appendChild(h2)
+    weather.appendChild(div)
 };
 

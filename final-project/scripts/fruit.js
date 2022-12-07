@@ -12,7 +12,7 @@ fetch(requestJSON)
 
         const shuffledFruits = fruits.sort(shuffle);
         for (let i = 0; i < 3; i++) {
-            displayFruits(shuffledFruits[i], i);
+            displayFruits(shuffledFruits[i]);
         }
         return arr1 = jsonObject;
     }
@@ -28,15 +28,10 @@ function shuffle() {
 
 function Total(arr1, sortedFruits) {
     const totalCarbohydrates = arr1.reduce((a, b) => sortedFruits.includes(b.name) ? a += +b.nutritions.carbohydrates : a, 0)
-    console.log(totalCarbohydrates)
     const totalProtein = arr1.reduce((a, b) => sortedFruits.includes(b.name) ? a += +b.nutritions.protein : a, 0)
-    console.log(totalProtein)
     const totalFat = arr1.reduce((a, b) => sortedFruits.includes(b.name) ? a += +b.nutritions.fat : a, 0)
-    console.log(totalFat)
     const totalCalories = arr1.reduce((a, b) => sortedFruits.includes(b.name) ? a += +b.nutritions.calories : a, 0)
-    console.log(totalCalories)
     const totalSugar = arr1.reduce((a, b) => sortedFruits.includes(b.name) ? a += +b.nutritions.sugar : a, 0)
-    console.log(totalSugar)
     let p = document.createElement('p');
     p.innerHTML = `Nutritional Facts of your Juice:<br>
     Total Carbs: ${totalCarbohydrates.toFixed(2)}<br>
@@ -49,7 +44,7 @@ function Total(arr1, sortedFruits) {
 }
 
 
-function displayFruits(fruit, i) {
+function displayFruits(fruit) {
     // displays options for juice
     let label = document.createElement("label");
     let fruitOption = document.createElement('input');
@@ -76,6 +71,5 @@ form1.addEventListener("submit", (event) => {
         Total(arr1, fruitList)
         var num = parseInt(localStorage.getItem("numJuice") ?? "0");
         localStorage.setItem("numJuice", ++num);
-        console.log(num);
     }
 })
