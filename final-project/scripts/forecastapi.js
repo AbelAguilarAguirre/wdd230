@@ -1,7 +1,7 @@
 const currentTemp = document.querySelector('.current-temp');
 const humidity = document.querySelector('.humidity');
 const captionDesc = document.querySelector('.caption');
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=33.1581&lon=-117.3506&appid=e01cc28e23298de71ebebd1f654ffdd7&units=imperial';
+const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&lon=-117.3506&appid=e01cc28e23298de71ebebd1f654ffdd7&units=imperial';
 async function apiFetch() {
     try {
         const response = await fetch(url);

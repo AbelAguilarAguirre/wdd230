@@ -345,9 +345,6 @@ form label input:required:valid {
 form input.submitBtn {
   background-color: var(--header-background);
   text-align: center;
-  grid-row: 4/6;
-  grid-column: 2/4;
-  border-radius: 10px;
   color: var(--nav-secondary-font);
   transition: 0.5s;
   z-index: 1;
@@ -358,6 +355,7 @@ form input.submitBtn {
   width: 100%;
   box-shadow: 1px 1px 10px black;
   cursor: pointer;
+  font-size: 150%;
 }
 
 form input.submitBtn:hover {
@@ -392,6 +390,7 @@ textarea {
   text-align: start;
   margin: 0;
   display: inline-block;
+  font-size: 150%;
 }
 .checkbox {
   margin: 0 5px 0 10px;
@@ -400,6 +399,12 @@ textarea {
 .options {
   display: flex;
   flex-flow: column wrap;
+}
+
+/*--------------------Your Juice -------------------------*/
+.yourjuice {
+  padding: 10px;
+  background-color: var(--header-font-color);
 }
 
 

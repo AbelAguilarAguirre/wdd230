@@ -50,7 +50,7 @@ function Total(arr1, sortedFruits) {
 
 
 function displayFruits(fruit, i) {
-
+    // displays options for juice
     let label = document.createElement("label");
     let fruitOption = document.createElement('input');
     let p = document.createElement('p');
@@ -74,5 +74,8 @@ form1.addEventListener("submit", (event) => {
     });
     if (good_or_bad) {
         Total(arr1, fruitList)
+        var num = parseInt(localStorage.getItem("numJuice") ?? "0");
+        localStorage.setItem("numJuice", ++num);
+        console.log(num);
     }
 })
