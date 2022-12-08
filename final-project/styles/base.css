@@ -397,7 +397,7 @@ textarea {
 }
 
 .options p {
-  padding: .75rem 0;
+  padding: 0.75rem 0;
   color: var(--nav-secondary-background);
   text-align: start;
   margin: 0;
@@ -413,6 +413,17 @@ textarea {
   flex-flow: column wrap;
 }
 
+.reciept {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  max-width: 320px;
+  margin: 0 auto;
+}
+.totals {
+  padding: 0 10px;
+}
+
 /*----------------------------------------------------------------------------Your Juice -----------------------------------------------------------------------------*/
 .yourjuice {
   padding: 10px;
@@ -425,7 +436,6 @@ textarea {
   text-align: center;
   margin: 0;
 }
-
 
 .weather div:nth-child(odd),
 .weather h1 {

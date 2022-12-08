@@ -21,20 +21,25 @@ function thanksMsg() {
     let email = document.querySelector(".email").value
     let phone = document.querySelector(".phonenumber").value
     let currentdate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(date);
+    let specialins = document.querySelector(".specialins").value
 
 
     let card = document.createElement('div');
+    card.setAttribute("class", "reciept")
     let p1 = document.createElement('p');
     let p2 = document.createElement('p');
     let p3 = document.createElement('p');
+    let p4 = document.createElement('p');
 
     p1.textContent = `Thanks ${fname} for ordering!`
     p2.textContent = `We will get back to you at ${email} or ${phone}.`
     p3.textContent = currentdate
+    p4.textContent = `Special Instructions:  ${specialins}`
 
     card.appendChild(p1)
     card.appendChild(p2)
     card.appendChild(p3)
+    card.appendChild(p4)
     thankyou.appendChild(card)
 }
 form.addEventListener("submit", (event) => {

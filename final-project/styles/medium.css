@@ -141,16 +141,29 @@
     border: solid #7b5e7b;
     border-radius: 10px;
   }
+
+  .thankyou {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
   .thankyou p {
     font-size: 25px;
+    max-width: 100%;
+    
   }
   .thankyou > * {
     border: #7b5e7b dotted;
     border-radius: 10px;
-    margin: 5px;
+    margin: 5px auto;
   }
   .submitBtn {
     border-radius: 10px;
+  }
+
+  .reciept {
+    max-width: 49%;
+    min-width: 421px;
   }
   /*--------------------------------------------About Us---------------------------*/
   .history {

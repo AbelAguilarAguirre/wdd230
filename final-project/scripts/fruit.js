@@ -32,15 +32,33 @@ function Total(arr1, sortedFruits) {
     const totalFat = arr1.reduce((a, b) => sortedFruits.includes(b.name) ? a += +b.nutritions.fat : a, 0)
     const totalCalories = arr1.reduce((a, b) => sortedFruits.includes(b.name) ? a += +b.nutritions.calories : a, 0)
     const totalSugar = arr1.reduce((a, b) => sortedFruits.includes(b.name) ? a += +b.nutritions.sugar : a, 0)
+    const div = document.createElement('div');
+    div.setAttribute("class", "reciept")
+    let p0 = document.createElement('p');
     let p = document.createElement('p');
-    p.innerHTML = `Nutritional Facts of your Juice:<br>
+    p.setAttribute("class", "totals")
+
+    p0.textContent = `${sortedFruits[0]} Juice`
+    div.appendChild(p0)
+    if (sortedFruits[1] != undefined) {
+        p0.innerHTML = `${sortedFruits[0]} and ${sortedFruits[1]} Juice Mix`
+        div.appendChild(p0)
+    }
+    if (sortedFruits[2] != undefined) {
+        p0.innerHTML = `${sortedFruits[0]}, ${sortedFruits[1]}, and ${sortedFruits[2]} Juice Mix`
+        div.appendChild(p0)
+    }
+    
+    p.innerHTML = `<br>Nutritional Facts of your Juice:<br>
     Total Carbs: ${totalCarbohydrates.toFixed(2)}<br>
     Total Protein: ${totalProtein.toFixed(2)}<br>
     Total Fat: ${totalFat.toFixed(2)}<br>
     Total Calories: ${totalCalories.toFixed(2)}<br>
     Total Sugar: ${totalSugar.toFixed(2)}<br>`
 
-    thankyou.appendChild(p)
+    
+    div.appendChild(p)
+    thankyou.appendChild(div)
 }
 
 
