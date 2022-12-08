@@ -1,0 +1,170 @@
+@media only screen and (min-width: 426px) {
+  body {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  main {
+    margin: 5px 5px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+  /* ----------------------------------------header------------------------------------------------- */
+  .logo {
+    width: auto;
+  }
+  .logo img {
+    max-width: 150px;
+    transition: 0.5s;
+  }
+  .logo img[data-src] {
+    width: 150px;
+  }
+  /* --------------------------------------hamburger button & Navigation------------------------------------- */
+  .navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .responsive {
+    width: 100%;
+  }
+  nav {
+    width: 100%;
+  }
+  .navigation li:first-child {
+    display: none;
+  }
+  .navigation li {
+    display: block;
+    max-width: 220px;
+    min-height: 58.5px;
+  }
+  /*--------------------------------------------------------------Footer-------------------*/
+  footer {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .content {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  footer hr {
+    display: none;
+  }
+  footer p {
+    padding: 5px;
+  }
+  /*------------------------------------------------------------Home Banner-----------------------------------*/
+  .home-banner {
+    max-width: 1024px;
+  }
+  .home-banner-img {
+    max-width: 1024px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+  }
+  .home-banner-a {
+    max-height: 106px;
+  }
+
+  /*-------------------------------------Coastal area---------------------------------*/
+  .coastal-area {
+    border: dashed #7b5e7b;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  /*-----------------------------------------------------------------------------Weather ----------------------------------------------------------------------------------------*/
+  .weather {
+    box-shadow: 1px 1px 10px black;
+    border-radius: 10px;
+  }
+  .weather h1 {
+    border-radius: 10px 10px 0 0;
+  }
+  .day:last-child {
+    border-radius: 0 0 10px 10px;
+  }
+  .day {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  .day > * {
+    padding: 10px;
+  }
+  /*----------------------------------------------------------------------------Your Juice -----------------------------------------------------------------------------*/
+  .yourjuice {
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 1px 1px 10px black;
+    border: dashed #7b5e7b;
+    width: 42%;
+    text-align: center;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  /* -------------------------------------------Social Media ------------------------------------------------------------------------ */
+  .facebook,
+  .twitter,
+  .instagram,
+  .facebook img,
+  .twitter img,
+  .instagram img {
+    width: 100%;
+    max-width: 80%;
+    transition: 0.5s;
+    min-width: 64px;
+  }
+  .social-media {
+    width: 48%;
+    margin: 10px 0;
+  }
+  .social-media-img {
+    object-fit: cover;
+    object-position: bottom;
+    height: 100%;
+  }
+  /*-----------------------------------Order Fresh--------------------------------------------*/
+  fieldset {
+    border: solid #7b5e7b;
+    border-radius: 10px;
+  }
+  .thankyou p {
+    font-size: 25px;
+  }
+  .thankyou > * {
+    border: #7b5e7b dotted;
+    border-radius: 10px;
+    margin: 5px;
+  }
+  .submitBtn {
+    border-radius: 10px;
+  }
+  /*--------------------------------------------About Us---------------------------*/
+  .history {
+    border: dashed #7b5e7b;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  .contact{
+    width: 49%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+  }
+  .map {
+    width: 41%;
+  }
+
+}

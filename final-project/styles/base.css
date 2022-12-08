@@ -29,6 +29,7 @@ p {
   font-size: 16px;
   text-align: center;
   margin: 0;
+  padding: 15px;
 }
 
 h1 {
@@ -66,7 +67,7 @@ h3 {
   width: 100%;
   border-radius: 5px;
   filter: blur(0);
-  transition: filter 1.5s;
+  transition: 1.5s;
   max-width: 107px;
   box-shadow: 1px 1px 10px black;
 }
@@ -83,7 +84,6 @@ h3 {
   font-size: 40px;
   color: var(--header-font-color);
   margin: 0 10px;
-  text-align: center;
 }
 
 /* --------------------------------------hamburger button & Navigation------------------------------------- */
@@ -210,6 +210,16 @@ hr {
   font-style: italic;
 }
 
+footer .ft {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+footer .ft p {
+  padding: 10px;
+}
+
 /* -------------------------------------Home Banner ----------------------------- */
 .home-banner {
   max-width: 425px;
@@ -302,6 +312,11 @@ hr {
   z-index: 1;
   transition: 0.5s;
   place-self: center;
+}
+.facebook img,
+.twitter img,
+.instagram img {
+  transition: 0.5s;
 }
 
 .instagram {
@@ -423,4 +438,10 @@ textarea {
   background-color: var(--nav-primary-background);
   color: var(--nav-primary-font);
   padding: 10px;
+}
+
+/*------------------------------------About Us -----------------------------------*/
+.contact {
+  background-color: var(--nav-primary-background);
+  padding: 15px;
 }
