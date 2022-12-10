@@ -45,7 +45,7 @@
     <main>
         <img class="home-banner-img" src="images/juice-placeholder.webp"
                     alt="Bountiful Foods Logo" data-src="images/juice.webp">
-        <form onsubmit="return handleData()" method="post"class="form">
+        <form class="form">
             <fieldset>
                 <legend>
                     <h1>Order your Specialty Drink Here</h1>
@@ -53,13 +53,12 @@
                 <label><h3>First Name*</h3><br><input type="text" name="fname" class="name input" required><br></label>
                 <label><h3>Email*</h3><br><input type="email" name="email" placeholder="someone@gmail.com" class="email input" required><br></label>
                 <label><h3>Phone Number*</h3><br><input type="tel" name="phone" placeholder="1235551234" class="phonenumber input" required><br><span class="output"></span></label>
-                
-                <span class="options">
+                <label for="options" class="options">
                     <h3>Choose Your Juice:</h3>
-                </span>
-                <div style="visibility:hidden; color:red; " id="chk_option_error">
-                    Please select at least one option.
-                    </div>
+                </label>
+                <select name="options" class="fruitOp0"></select>
+                <select name="options" class="fruitOp1"></select>
+                <select name="options" class="fruitOp2"></select>
                 <label><h3>Special Instructions</h3><br> <textarea name="specialinstructions"
                         rows="6" class="specialins"></textarea></label>
             </fieldset>
@@ -95,7 +94,6 @@
     <script src="scripts/hamburger-menu.js"></script>
     <script src="scripts/current-year.js"></script>
     <script src="scripts/last-updated.js"></script>
-    <script src="scripts/regex.js"></script>
     <script src="scripts/fruit.js"></script>
 </body>
 

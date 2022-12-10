@@ -424,6 +424,22 @@ textarea {
   padding: 0 10px;
 }
 
+.options h3 {
+  margin: 25px 0 0 0;
+}
+
+select {
+  display: block;
+  padding: 0.75rem;
+  color: var(--nav-primary-font);
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 94.78%;
+  font-size: 150%;
+}
+
 /*----------------------------------------------------------------------------Your Juice -----------------------------------------------------------------------------*/
 .yourjuice {
   padding: 10px;
