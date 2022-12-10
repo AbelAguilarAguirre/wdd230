@@ -80,6 +80,7 @@
     border: dashed #7b5e7b;
     border-radius: 10px;
     margin: 10px 0;
+    box-shadow: 1px 1px 10px black;
   }
   /*-----------------------------------------------------------------------------Weather ----------------------------------------------------------------------------------------*/
   .weather {
@@ -157,13 +158,29 @@
     border-radius: 10px;
     margin: 5px auto;
   }
-  .submitBtn {
+  form input.submitBtn {
     border-radius: 10px;
   }
 
   .reciept {
     max-width: 49%;
     min-width: 421px;
+  }
+
+  .freshImg {
+    position:fixed;
+    z-index: -1;
+    height: 100%;
+    width: auto;
+    overflow: hidden;
+    max-width: none;
+    top: 0;
+  }
+
+  form {
+    background-color: rgba(255, 255, 255, 0.876);
+    padding: 20px;
+    border-radius: 10px;
   }
   /*--------------------------------------------About Us---------------------------*/
   .history {
