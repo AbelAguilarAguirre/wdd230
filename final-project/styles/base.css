@@ -203,13 +203,19 @@ footer {
 
 .link {
   text-decoration: none;
-  color: var(--nav-primary-font);
+  color: var(--current-page-background);
   transition: 0.5s;
 }
 
-.link:hover {
+.link:nth-child(even):hover {
   color: var(--header-font-color);
   transition: 0.5s;
+  transform: skew(-5deg, 5deg);
+}
+.link:nth-child(odd):hover {
+  color: var(--header-font-color);
+  transition: 0.5s;
+  transform: skew(5deg, -5deg);
 }
 
 hr {
