@@ -180,7 +180,7 @@ h3 {
 /* ------------------------------------------------------------------Footer------------------------------------------------------- */
 footer {
   font-family: var(--header-font);
-  background-color: var(--nav-secondary-background);
+  background-color:var(--header-background);
   margin-top: 10px;
   text-align: center;
   color: var(--nav-secondary-font);
