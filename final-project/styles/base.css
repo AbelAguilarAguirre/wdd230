@@ -19,7 +19,9 @@ body {
 /* --------------------------------------font sizes------------------------------------- */
 h1,
 h2,
-h3 {
+h3,
+.h3 
+{
   font-family: var(--header-font);
   text-align: center;
 }
@@ -40,7 +42,8 @@ h2 {
   font-size: 25px;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 20px;
 }
 
@@ -60,6 +63,12 @@ h3 {
   width: 25%;
   height: auto;
   margin: 10px;
+  transition: 0.5s;
+}
+
+.logo img:hover {
+  transform: skew(5deg, -5deg);
+  transition: 0.5s;
 }
 
 .logo img,
@@ -172,7 +181,7 @@ h3 {
   background-color: var(--nav-secondary-background);
   color: var(--current-page-background);
   transition: .5s;
-  scale: 1.4;
+  scale: 1.1;
 }
 
 
@@ -358,7 +367,8 @@ footer .ft p {
 /* ----------------------------------------Order Drink ----------------------------------------------------------------------------------*/
 fieldset label {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 25px;
+  display: block;
 }
 
 fieldset {
@@ -396,7 +406,7 @@ form input.submitBtn:hover {
   transform: skew(-1deg, 1deg);
 }
 
-form h3 {
+form .h3 {
   text-align: left;
   margin: 25px 0 -15px 0;
 }
@@ -413,21 +423,10 @@ textarea {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.options p {
-  padding: 0.75rem 0;
-  color: var(--nav-secondary-background);
-  text-align: start;
-  margin: 0;
-  display: inline-block;
-  font-size: 150%;
-}
-.checkbox {
-  margin: 0 5px 0 10px;
-}
-
 .options {
   display: flex;
   flex-flow: column wrap;
+  margin: 0;
 }
 
 .reciept {
@@ -439,10 +438,6 @@ textarea {
 }
 .totals {
   padding: 0 10px;
-}
-
-.options h3 {
-  margin: 25px 0 0 0;
 }
 
 select {
@@ -472,14 +467,14 @@ select {
 
 .weather div:nth-child(odd),
 .weather h1 {
-  background-color: var(--header-font-color);
-  color: var(--h-font);
+  background-color: var(--h-font);
+  color: var(--header-font-color);
   padding: 10px;
   margin: 0;
 }
 .weather div:nth-child(even) {
-  background-color: var(--h-font);
-  color: var(--header-font-color);
+  background-color: var(--header-font-color);
+  color: var(--h-font);
   padding: 10px;
 }
 

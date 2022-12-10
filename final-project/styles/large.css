@@ -9,7 +9,7 @@
             "o o o h h"
             "f f w w w"
             "c c c c c";
-        max-width: 1440px;
+        max-width: 1500px;
         margin: 0 auto;
     }
 
@@ -64,6 +64,7 @@
     }
     .form {
         grid-column: 2/5;
+        margin-top: 5px;
     }
  /*--------------------------------------------About Us---------------------------*/
     .abtus {

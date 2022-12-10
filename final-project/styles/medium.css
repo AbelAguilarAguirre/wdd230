@@ -181,12 +181,14 @@
     background-color: rgba(255, 255, 255, 0.876);
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
   }
   /*--------------------------------------------About Us---------------------------*/
   .history {
     border: dashed #7b5e7b;
     border-radius: 10px;
-    margin: 10px 0;
+    margin-top: 10px;
+    box-shadow: 1px 1px 10px black;
   }
   .contact{
     width: 49%;
@@ -195,6 +197,9 @@
   }
   .map {
     width: 41%;
+    border: dashed #7b5e7b;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
   }
 
 }

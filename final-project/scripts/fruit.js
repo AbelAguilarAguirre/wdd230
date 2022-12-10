@@ -198,4 +198,5 @@ form1.addEventListener("submit", (event) => {
     testInfo(input);
     thanksMsg(fruitList);
     Total(arr1, fruitList);
-});
+    
+}, {once:true});
