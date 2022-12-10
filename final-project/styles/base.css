@@ -135,11 +135,18 @@ h3 {
 .navigation li:hover:nth-child(odd) {
   transition: 0.5s;
   transform: skew(5deg, -5deg);
+  border-radius: 5px;
 }
 
 .navigation li:hover:nth-child(even) {
   transition: 0.5s;
   transform: skew(-5deg, 5deg);
+  border-radius: 5px;
+}
+
+.navigation li a:hover {
+  background-color: var(--h-font);
+  color: var(--current-page-background);
 }
 
 .navigation {
@@ -163,8 +170,12 @@ h3 {
 
 .navigation li .currentpage {
   background-color: var(--nav-secondary-background);
-  color: var(--nav-secondary-font);
+  color: var(--current-page-background);
+  transition: .5s;
+  scale: 1.4;
 }
+
+
 
 /* ------------------------------------------------------------------Footer------------------------------------------------------- */
 footer {
