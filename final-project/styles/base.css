@@ -384,9 +384,9 @@ form label input:required:valid {
 }
 
 form input.submitBtn {
-  background-color: var(--header-background);
+  background-color: var(--nav-primary-background);
   text-align: center;
-  color: var(--nav-secondary-font);
+  color: var(--nav-primary-font);
   transition: 0.5s;
   z-index: 1;
   border: none;
@@ -401,8 +401,8 @@ form input.submitBtn {
 
 form input.submitBtn:hover {
   transition: 0.5s;
-  background-color: var(--nav-primary-background);
-  color: var(--nav-primary-font);
+  background-color: var(--header-background);
+  color: var(--nav-secondary-font);
   transform: skew(-1deg, 1deg);
 }
 
