@@ -483,3 +483,20 @@ select {
   background-color: var(--nav-primary-background);
   padding: 15px;
 }
+
+.abtuslink {
+  text-decoration: none;
+  color: var(--header-background);
+  transition: 0.5s;
+}
+
+.abtuslink:nth-child(even):hover {
+  color: var(--header-font-color);
+  transition: 0.5s;
+  transform: skew(-5deg, 5deg);
+}
+.abtuslink:nth-child(odd):hover {
+  color: var(--header-font-color);
+  transition: 0.5s;
+  transform: skew(5deg, -5deg);
+}
